@@ -25,9 +25,9 @@
 
         </div>
 
-        <card image="../../public/paysage.jpg"
-              imgalt="Le Jardin des Deux Rives à Strasbourg, le lieu du festvival"
-              class="flex-none"/>
+        <cardPaysage image="../../public/paysage.jpg"
+                      imgalt="Le Jardin des Deux Rives à Strasbourg, le lieu du festvival"
+                      class="flex-none"/>
 
       </section>
 
@@ -39,7 +39,16 @@
     <!--Section 3 : Les Artistes-->
 
     <div>
-        
+        <div>
+          <h2>Qui vient à Rock en Stras’ ?</h2>
+
+          <p>Pas moins de 9 groupes et artistes seront présents sur les 3 jours du festival !</p>
+          
+          <monButton>
+            Découvrir tous les Artistes
+          </monButton>
+
+        </div>
     </div>
     
   </div>
@@ -47,7 +56,7 @@
 
 <script>
 import logoGrand from "../components/icons/logoGrand.vue"
-import card from "../components/card.vue"
+import cardPaysage from "../components/cardPaysage.vue"
 import monButton from "../components/monButton.vue"
 import separateurRose1 from "../components/icons/separateurRose1.vue"
 
@@ -57,6 +66,6 @@ export default {
     return {
     };
   },
-  components: { logoGrand, card, monButton, separateurRose1 },
+  components: { logoGrand, cardPaysage, monButton, separateurRose1 },
 }
 </script>
