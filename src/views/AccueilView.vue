@@ -14,7 +14,7 @@
           <p class="mb-4">Retrouvez sur 2 scènes vos artistes préférés !</p>
 
           <monButton class="text-white font-button text-lg">
-            mon heeeeellllooooo
+            Voir tout le Programme
           </monButton>
         </div>
 
