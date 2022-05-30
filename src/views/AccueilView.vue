@@ -9,8 +9,8 @@
 
     <!--Section 2 : Programme-->
 
-    <div class="bg-gray-900 p-10 text-white">
-      <section class="max-w-7xl m-auto flex flex-row flex-wrap items-center gap-6">
+    <div class="bg-gray-900 text-white">
+      <section class="max-w-7xl m-auto p-10 sm:pt-24 flex flex-row flex-wrap items-center gap-6">
 
         <h2 class="font-h2 text-2xl flex-none w-full">Rock en Stras’, c’est Quoi ? Quand ? Où ?</h2>
 
@@ -30,6 +30,10 @@
               class="flex-none"/>
 
       </section>
+
+      <separateurRose1 class="mt-5 w-screen"/>
+
+
     </div>
 
     <!--Section 3 : Les Artistes-->
@@ -45,6 +49,7 @@
 import logoGrand from "../components/icons/logoGrand.vue"
 import card from "../components/card.vue"
 import monButton from "../components/monButton.vue"
+import separateurRose1 from "../components/icons/separateurRose1.vue"
 
 export default {
   name: "AccueilView",
@@ -52,6 +57,6 @@ export default {
     return {
     };
   },
-  components: { logoGrand, card, monButton },
+  components: { logoGrand, card, monButton, separateurRose1 },
 }
 </script>
