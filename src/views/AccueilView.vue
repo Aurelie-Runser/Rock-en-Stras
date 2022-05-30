@@ -2,7 +2,7 @@
   <div>
     <!--Section 1 : titre-->
 
-    <div class="flex justify-center pt-32 pb-14 bg-pink-300">
+    <div class="flex justify-center pt-36 pb-24 bg-pink-300">
       <logoGrand class="mx-10 max-w-4xl"/>
       <span class="sr-only">Rock en Stras'</span>
     </div>
