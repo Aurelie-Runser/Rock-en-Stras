@@ -2,7 +2,7 @@
         <nav class="w-full h-24 bg-gradient-to-r from-pink-300 to-transparent flex flex-row items-center justify-between px-5">
             <div>
                 <RouterLink to="/">
-                    <img src="../../public/logo/logoPetit.png" alt="logo">
+                    <logoPetit class="w-14"/>
                     <span class="sr-only">Accueil</span>
                 </RouterLink>
             </div>
@@ -46,6 +46,8 @@
 </template>
 
 <script>
+import logoPetit from "../components/icons/logoPetit.vue"
+
 export default {
   name: "MonHeader",
   data() {
@@ -53,6 +55,6 @@ export default {
       menuOuvert: false,
     };
   },
-  components: { },
+  components: { logoPetit },
 }
 </script>

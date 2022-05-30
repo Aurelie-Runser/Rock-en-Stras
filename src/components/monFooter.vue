@@ -3,7 +3,7 @@
         <div class="flex flex-wrap justify-between content-around gap-8">
             <div>
                 <RouterLink to="/">
-                    <img class="w-14" src="../../public/logo/logoPetit.png" alt="logo">
+                    <logoPetit class="w-14"/>
                     <span class="sr-only">Accueil</span>
                 </RouterLink>
             </div>
@@ -40,6 +40,7 @@
 </template>
 
 <script>
+import logoPetit from "../components/icons/logoPetit.vue"
 import facebookJour from "../components/icons/facebookJour.vue"
 import instaJour from "../components/icons/instaJour.vue"
 import twitterJour from "../components/icons/twitterJour.vue"
@@ -50,6 +51,6 @@ export default {
     return {
     };
   },
-  components: { facebookJour, instaJour, twitterJour },
+  components: { logoPetit, facebookJour, instaJour, twitterJour },
 }
 </script>
