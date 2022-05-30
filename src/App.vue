@@ -1,16 +1,17 @@
 <template>
   <div>
-    <monheader class="fixed"/>
+    <monHeader class="fixed"/>
     <RouterView />
+    <monFooter/>
   </div>
-
 </template>
 
 <script>
 
-import monheader from "./components/monheader.vue"
+import monHeader from "./components/monHeader.vue"
+import monFooter from "./components/monFooter.vue"
 
 export default {
-  components: {monheader,},
+  components: {monHeader, monFooter},
 };
 </script>
