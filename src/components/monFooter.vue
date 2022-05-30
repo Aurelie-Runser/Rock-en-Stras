@@ -7,6 +7,11 @@
             </RouterLink>
         </div>
 
+        <div class="flex gap-4">
+            <img src="../../public/reseau/facebookJour.png" alt="lien vers facebook">
+            <img src="../../public/reseau/instagramJour.png" alt="lien vers instagram">
+            <img src="../../public/reseau/twitterJour.png" alt="lien vers twitter">
+        </div>
     </div>
 </template>
 
