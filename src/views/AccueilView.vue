@@ -10,16 +10,16 @@
     <!--Section 2 : Programme-->
 
     <div class="bg-gray-900 text-white">
-      <section class="max-w-7xl m-auto p-10 sm:pt-24 flex flex-row flex-wrap items-center gap-6">
+      <section class="max-w-7xl m-auto p-10 lg:pt-24 flex flex-row flex-wrap items-center gap-10 lg:gap-20">
 
         <h2 class="font-h2 text-2xl flex-none w-full">Rock en Stras’, c’est Quoi ? Quand ? Où ?</h2>
 
-        <div class="my-5 font-base text-base leading-6 basis-80 flex-auto">
+        <div class="my-5 font-base text-base leading-6 basis-80 flex flex-col flex-auto">
           <p class="mb-4">1er festival de Rock humoristique de Strasbourg.</p>
           <p class="mb-4">Rock en Stras’ aura lieu du vendredi 15 au dimanche 17 avril au Deux Rives à Strasbourg.</p>
           <p class="mb-4">Retrouvez sur 2 scènes vos artistes préférés !</p>
 
-          <monButton class="text-white font-button text-lg">
+          <monButton class="text-white font-button text-lg mt-12">
             Voir tout le Programme
           </monButton>
 
