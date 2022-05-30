@@ -1,6 +1,6 @@
 <template>
     <div class="w-full p-7 bg-gray-300 text-pink-500 font-base">
-        <div class="flex flex-wrap justify-between content-around gap-8">
+        <div class="flex flex-wrap items-center justify-around gap-8">
             <div>
                 <RouterLink to="/">
                     <logoPetit class="w-14"/>
