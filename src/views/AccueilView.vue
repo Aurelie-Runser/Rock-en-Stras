@@ -19,7 +19,7 @@
           <p class="mb-4">Rock en Stras’ aura lieu du vendredi 15 au dimanche 17 avril au Deux Rives à Strasbourg.</p>
           <p class="mb-4">Retrouvez sur 2 scènes vos artistes préférés !</p>
 
-          <monButton class="text-white font-button text-lg mt-12">
+          <monButton class="font-button text-lg mt-12">
             Voir tout le Programme
           </monButton>
 
@@ -48,7 +48,7 @@
           <div class="basis-96 flex-auto flex flex-col gap-5 lg:gap-10">
             <p class="font-base text-lg leading-8">Pas moins de 9 groupes et artistes seront présents sur les 3 jours du festival !</p>
             
-            <monButton>
+            <monButton class="font-button text-lg mt-12">
               Découvrir tous les Artistes
             </monButton>
           </div>
