@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-black">
-    <monheader/>
+  <div>
+    <monheader class="fixed"/>
+    <RouterView />
   </div>
 
-  <RouterView />
 </template>
 
 <script>
