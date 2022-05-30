@@ -8,15 +8,17 @@
                 </RouterLink>
             </div>
 
-            <div class="flex gap-4 flex-none">
+            <div class="flex gap-4 items-center">
                 <a href="https://fr-fr.facebook.com/">
-                    <img class="w-12 h-12" src="../../public/reseau/facebookJour.png" alt="lien vers facebook">
+                    <facebookJour class="w-12 h-12"/>
                 </a>
-                <a href="https://twitter.com/?lang=fr">
-                    <img class="w-12 h-12" src="../../public/reseau/instagramJour.png" alt="lien vers instagram">
-                </a>
+
                 <a href="https://www.instagram.com/">
-                    <img class="w-12 h-12" src="../../public/reseau/twitterJour.png" alt="lien vers twitter">
+                        <instaJour class="w-14 h-14"/>
+                </a>
+
+                <a href="https://twitter.com/?lang=fr">
+                        <twitterJour class="w-12 h-12"/>
                 </a>
             </div>
 
@@ -38,6 +40,9 @@
 </template>
 
 <script>
+import facebookJour from "../components/icons/facebookJour.vue"
+import instaJour from "../components/icons/instaJour.vue"
+import twitterJour from "../components/icons/twitterJour.vue"
 
 export default {
   name: "monFooter",
@@ -45,6 +50,6 @@ export default {
     return {
     };
   },
-  components: {  },
+  components: { facebookJour, instaJour, twitterJour },
 }
 </script>
