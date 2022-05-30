@@ -4,11 +4,15 @@
       <logoGrand class="mx-10 max-w-4xl"/>
       <span class="sr-only">Rock en Stras'</span>
     </div>
+    <div>
+      <card image="../../public/paysage.jpg"/>
+    </div>
   </div>
 </template>
 
 <script>
 import logoGrand from "../components/icons/logoGrand.vue"
+import card from "../components/card.vue"
 
 export default {
   name: "AccueilView",
@@ -16,6 +20,6 @@ export default {
     return {
     };
   },
-  components: { logoGrand },
+  components: { logoGrand, card },
 }
 </script>
