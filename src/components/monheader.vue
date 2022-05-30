@@ -1,5 +1,5 @@
 <template>
-        <nav class="z-40 w-full h-24 bg-pink-300 flex flex-row items-center justify-between px-5">
+        <nav class="z-40 w-full h-24 bg-pink-300 flex flex-row items-center justify-between px-10">
             <div>
                 <RouterLink to="/">
                     <logoPetit class="w-14"/>
@@ -28,18 +28,25 @@
                 :class="{ 'translate-y-0': menuOuvert }">
 
                 <ul class="my-24 font-h2 text-2xl text-white leading-loose">
-                    <li><RouterLink to="/" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">Accueil</RouterLink></li>
-                    <li><RouterLink to="/program" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">Programmation</RouterLink></li>
-                    <li><RouterLink to="/artistes" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">Artistes</RouterLink></li>
-                    <li><RouterLink to="/contact" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">Contact</RouterLink></li>
+                    <li><RouterLink to="/" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert"
+                            class="hover:text-pink-500 focus:text-pink-500">Accueil</RouterLink></li>
+                    <li><RouterLink to="/program" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert"
+                            class="hover:text-pink-500 focus:text-pink-500">Programmation</RouterLink></li>
+                    <li><RouterLink to="/artistes" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert"
+                            class="hover:text-pink-500 focus:text-pink-500">Artistes</RouterLink></li>
+                    <li><RouterLink to="/contact" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert"
+                            class="hover:text-pink-500 focus:text-pink-500">Contact</RouterLink></li>
                 </ul>
             </div>
 
             <!-- Menu ordi -->
-            <ul class="hidden my-2 flex-auto justify-end font-h3 text-xl gap-10 text-white md:flex">
-                <li><RouterLink to="/program" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">Programmation</RouterLink></li>
-                <li><RouterLink to="/artistes" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">Artistes</RouterLink></li>
-                <li><RouterLink to="/contact" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">Contact</RouterLink></li>
+            <ul class="hidden my-2 flex-auto justify-end font-h3 text-xl gap-20 text-white md:flex">
+                <li><RouterLink to="/program" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert"
+                        class="hover:text-pink-500 focus:text-pink-500">Programmation</RouterLink></li>
+                <li><RouterLink to="/artistes" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert"
+                        class="hover:text-pink-500 focus:text-pink-500">Artistes</RouterLink></li>
+                <li><RouterLink to="/contact" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert"
+                        class="hover:text-pink-500 focus:text-pink-500">Contact</RouterLink></li>
             </ul>
         </nav>
 </template>
