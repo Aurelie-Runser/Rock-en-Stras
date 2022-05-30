@@ -39,11 +39,13 @@
     <!--Section 3 : Les Artistes-->
 
     <div class="bg-pink-500 text-white">
-        <section  class="max-w-7xl m-auto px-8 pb-8 flex flex-row flex-wrap items-center gap-10 lg:gap-20">
+        <section  class="max-w-7xl m-auto px-8 pb-20 flex flex-row flex-wrap items-center gap-10 lg:gap-20">
 
           <h2 class="font-h2 text-2xl flex-none w-full">Qui vient à Rock en Stras’ ?</h2>
 
-          <cardArtiste class="m-auto"/>
+          <cardArtiste class="m-auto"
+                      image="../../public/groupe.jpg"
+                      imgalt="Illustration d'un groupe de musique"/>
 
           <div class="basis-96 flex-auto flex flex-col gap-5 lg:gap-10">
             <p class="font-base text-base lg:text-lg leading-8">Pas moins de 9 groupes et artistes seront présents sur les 3 jours du festival !</p>
@@ -52,8 +54,6 @@
               Découvrir tous les Artistes
             </monButton>
           </div>
-
-          
 
         </section>
     </div>
