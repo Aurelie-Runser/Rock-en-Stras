@@ -2,7 +2,7 @@
   <div>
     <monHeader class="fixed"/>
     <RouterView />
-    <monFooter class="mt-14"/>
+    <monFooter/>
   </div>
 </template>
 
