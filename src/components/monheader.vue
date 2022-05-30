@@ -31,7 +31,6 @@
                     <li><RouterLink to="/" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">Accueil</RouterLink></li>
                     <li><RouterLink to="/program" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">Programmation</RouterLink></li>
                     <li><RouterLink to="/artistes" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">Artistes</RouterLink></li>
-                    <li><RouterLink to="/festival" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">Festival</RouterLink></li>
                     <li><RouterLink to="/contact" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">Contact</RouterLink></li>
                 </ul>
             </div>
@@ -40,7 +39,6 @@
             <ul class="hidden my-2 flex-auto justify-end font-h3 text-xl gap-10 text-white md:flex">
                 <li><RouterLink to="/program" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">Programmation</RouterLink></li>
                 <li><RouterLink to="/artistes" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">Artistes</RouterLink></li>
-                <li><RouterLink to="/festival" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">Festival</RouterLink></li>
                 <li><RouterLink to="/contact" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">Contact</RouterLink></li>
             </ul>
         </nav>
