@@ -39,7 +39,7 @@
     <!--Section 3 : Les Artistes-->
 
     <div>
-        <div>
+        <section>
           <h2>Qui vient à Rock en Stras’ ?</h2>
 
           <p>Pas moins de 9 groupes et artistes seront présents sur les 3 jours du festival !</p>
@@ -48,7 +48,9 @@
             Découvrir tous les Artistes
           </monButton>
 
-        </div>
+          <cardArtiste/>
+
+        </section>
     </div>
     
   </div>
@@ -57,6 +59,7 @@
 <script>
 import logoGrand from "../components/icons/logoGrand.vue"
 import cardPaysage from "../components/cardPaysage.vue"
+import cardArtiste from "../components/cardArtiste.vue"
 import monButton from "../components/monButton.vue"
 import separateurRose1 from "../components/icons/separateurRose1.vue"
 
@@ -66,6 +69,6 @@ export default {
     return {
     };
   },
-  components: { logoGrand, cardPaysage, monButton, separateurRose1 },
+  components: { logoGrand, cardPaysage, cardArtiste, monButton, separateurRose1 },
 }
 </script>
