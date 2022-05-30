@@ -1,11 +1,17 @@
 <template>
   <div>
+    <!--Section 1 : titre-->
+
     <div class="flex justify-center pt-32 pb-14 bg-pink-300">
       <logoGrand class="mx-10 max-w-4xl"/>
       <span class="sr-only">Rock en Stras'</span>
     </div>
+
+    <!--Section 2 : Programme-->
+
     <div class="bg-gray-900 p-10 text-white">
       <div class="max-w-7xl m-auto flex flex-row flex-wrap items-center gap-6">
+
         <h2 class="font-h2 text-2xl flex-none w-full">Rock en Stras’, c’est Quoi ? Quand ? Où ?</h2>
 
         <div class="my-5 font-base text-base leading-6 basis-80 flex-auto">
@@ -16,11 +22,19 @@
           <monButton class="text-white font-button text-lg">
             Voir tout le Programme
           </monButton>
+          
         </div>
 
         <card image="../../public/paysage.jpg"
               imgalt="Le Jardin des Deux Rives à Strasbourg, le lieu du festvival"
               class="flex-none"/>
+
+      </div>
+
+      <!--Section 3 : Les Artistes-->
+
+      <div>
+        
       </div>
 
     </div>
