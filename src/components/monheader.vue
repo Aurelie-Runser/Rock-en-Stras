@@ -47,7 +47,7 @@
 
 <script>
 export default {
-  name: "App",
+  name: "MonHeader",
   data() {
     return {
       menuOuvert: false,
