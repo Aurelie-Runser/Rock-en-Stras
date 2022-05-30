@@ -9,13 +9,21 @@
             </div>
 
             <div class="flex gap-4 flex-none">
-                <img class="w-12 h-12" src="../../public/reseau/facebookJour.png" alt="lien vers facebook">
-                <img class="w-12 h-12" src="../../public/reseau/instagramJour.png" alt="lien vers instagram">
-                <img class="w-12 h-12" src="../../public/reseau/twitterJour.png" alt="lien vers twitter">
+                <a href="https://fr-fr.facebook.com/">
+                    <img class="w-12 h-12" src="../../public/reseau/facebookJour.png" alt="lien vers facebook">
+                </a>
+                <a href="https://twitter.com/?lang=fr">
+                    <img class="w-12 h-12" src="../../public/reseau/instagramJour.png" alt="lien vers instagram">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img class="w-12 h-12" src="../../public/reseau/twitterJour.png" alt="lien vers twitter">
+                </a>
             </div>
 
             <div>
-                <p>Nous contacter</p>
+                <RouterLink to="/contact">
+                    <p>Nous contacter</p>
+                </RouterLink>
             </div>
 
             <div>
