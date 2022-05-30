@@ -1,5 +1,5 @@
 <template>
-        <nav class="w-full h-24 bg-gradient-to-r from-pink-300 to-transparent flex flex-row items-center justify-between px-5">
+        <nav class="z-40 w-full h-24 bg-gradient-to-r from-pink-300 to-transparent flex flex-row items-center justify-between px-5">
             <div>
                 <RouterLink to="/">
                     <logoPetit class="w-14"/>
