@@ -7,7 +7,7 @@
                 <p class="mb-6 lg:mb-8 leading-8">Ce festival aura lieu du vendredi 15 au dimanche 17 avril avec 2 scènes pour faire chanter 2 fois plus de vos artictes préférés !</p>
             </div>
 
-            <div class="mx-auto my-16 max-w-5xl">
+            <div class="mx-auto my-16 max-w-6xl">
                 <h3>La programmation</h3>
 
                 <programArt class="flex-row"

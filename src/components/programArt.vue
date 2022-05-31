@@ -16,6 +16,12 @@
             </ul>
         </div>
 
+        <div class="flex-none w-full -mt-12">
+          <monButton class="mx-auto">
+            Voir le programme du jour en détail
+          </monButton>
+        </div>
+
     </div>
 </template>
 
