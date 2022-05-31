@@ -36,5 +36,10 @@
         @apply border-2;
         @apply border-white;
         @apply skew-x-3;
+        @apply text-base;
+        @apply font-base; 
+        @apply text-white;
+        @apply focus:bg-gray-300;
+        @apply focus:text-gray-900;
     }
 }
