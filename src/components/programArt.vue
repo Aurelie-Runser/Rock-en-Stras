@@ -18,14 +18,6 @@
             </ul>
         </div>
 
-        <div class="flex-none w-full -mt-12">
-          <RouterLink to="/">
-            <monButton class="mx-auto">
-              Voir le programme du jour en détail
-            </monButton>
-            </RouterLink>
-        </div>
-
     </div>
 </template>
 
@@ -33,7 +25,6 @@
 
 import cardPortrait from "../components/cardPortrait.vue"
 import cardPaysage from "../components/cardPaysage.vue"
-import monButton from "../components/monButton.vue"
 
 export default {
   name: "ProgramArt",
@@ -41,7 +32,7 @@ export default {
     return {
     };
   },
-  components: { cardPortrait, cardPaysage, monButton },
+  components: { cardPortrait, cardPaysage },
   
   props:{
     image:{
