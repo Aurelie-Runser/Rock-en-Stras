@@ -1,5 +1,5 @@
 <template>
-    <div class="relative w-36 h-52 md:w-48 md:h-64 xl:w-60 xl:h-80 border-4 border-white border-dashed">
+    <div class="w-28 h-40 sm:w-48 sm:h-64 border-4 border-white border-dashed">
         <img class="h-full object-cover" :src=image :alt=imgalt>
     </div>
 </template>
