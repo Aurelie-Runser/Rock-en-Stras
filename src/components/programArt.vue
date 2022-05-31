@@ -1,8 +1,10 @@
 <template>
     <div class="mx-auto my-16 w-full xs:w-[80%] lg:w-full flex flex-wrap flex-row gap-10 items-center">
         
-        <cardPortrait class="lg:hidden"/>
-        <cardPaysage class="hidden lg:block"/>
+        <cardPortrait class="lg:hidden"
+          :image="image"/>
+        <cardPaysage class="hidden lg:block"
+          :image="image"/>
 
         <div class="text-white font-base mx-auto">
             <h4 class="font-semibold text-base lg:text-lg mx-5 mb-5 sm:mx-10">{{jour}}</h4>
@@ -42,6 +44,9 @@ export default {
   components: { cardPortrait, cardPaysage, monButton },
   
   props:{
+    image:{
+      type: String,
+    },
     jour:{
       type: String,
     },

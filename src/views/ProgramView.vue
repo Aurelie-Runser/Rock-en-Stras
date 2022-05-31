@@ -11,6 +11,7 @@
                 <h3>La programmation</h3>
 
                 <programArt class="flex-row"
+                    image="/vendredi.jpg"
                     jour="Vendredi 15"
                     artiste1="Salut c'est cool"
                     artiste2="Ultra Vomit"
@@ -19,6 +20,7 @@
                     artiste5="Elmer Food Beat"/>
 
                 <programArt class="flex-row-reverse"
+                    image="/samedi.jpg"
                     jour="Samedi 16"
                     artiste1="Ultra Vomit"
                     artiste2="Les Fatals Picards"
@@ -27,6 +29,7 @@
                     artiste5="Fills Monkey"/>
 
                 <programArt class="flex-row"
+                    image="/dimanche.jpg"
                     jour="Dimanche 17"
                     artiste1="Les Fatals Picards"
                     artiste2="Flagrants Délires"
