@@ -45,7 +45,7 @@
         <h2 class="flex-none w-full">Qui vient à Rock en Stras’ ?</h2>
 
         <cardArtiste class="m-auto"
-                     image="../../public/groupe.jpg"
+                     image="public\groupe.jpg"
                      imgalt="Illustration d'un groupe de musique"/>
 
         <div class="basis-96 flex-auto flex flex-col gap-2 lg:gap-10">
