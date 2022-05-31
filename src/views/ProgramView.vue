@@ -10,9 +10,29 @@
             <div class="mx-auto my-16 max-w-5xl">
                 <h3>La programmation</h3>
 
-                <programArt class="flex-row"/>
-                <programArt class="flex-row-reverse"/>
-                <programArt class="flex-row"/>
+                <programArt class="flex-row"
+                    jour="Vendredi 15"
+                    artiste1="Artiste 1"
+                    artiste2="Artiste 2"
+                    artiste3="Artiste 3"
+                    artiste4="Artiste 4"
+                    artiste5="Artiste 5"/>
+
+                <programArt class="flex-row-reverse"
+                    jour="Samedi 16"
+                    artiste1="Artiste 2"
+                    artiste2="Artiste 4"
+                    artiste3="Artiste 5"
+                    artiste4="Artiste 6"
+                    artiste5="Artiste 7"/>
+
+                <programArt class="flex-row"
+                    jour="Dimanche 17"
+                    artiste1="Artiste 4"
+                    artiste2="Artiste 6"
+                    artiste3="Artiste 7"
+                    artiste4="Artiste 8"
+                    artiste5="Artiste 9"/>
             </div>
 
         
