@@ -12,27 +12,27 @@
 
                 <programArt class="flex-row"
                     jour="Vendredi 15"
-                    artiste1="Artiste 1"
-                    artiste2="Artiste 2"
-                    artiste3="Artiste 3"
-                    artiste4="Artiste 4"
-                    artiste5="Artiste 5"/>
+                    artiste1="Salut c'est cool"
+                    artiste2="Ultra Vomit"
+                    artiste3="Les Bidochons"
+                    artiste4="Les Fatals Picards"
+                    artiste5="Elmer Food Beat"/>
 
                 <programArt class="flex-row-reverse"
                     jour="Samedi 16"
-                    artiste1="Artiste 2"
-                    artiste2="Artiste 4"
-                    artiste3="Artiste 5"
-                    artiste4="Artiste 6"
-                    artiste5="Artiste 7"/>
+                    artiste1="Ultra Vomit"
+                    artiste2="Les Fatals Picards"
+                    artiste3="Elmer Food Beat"
+                    artiste4="Flagrants Délires"
+                    artiste5="Fills Monkey"/>
 
                 <programArt class="flex-row"
                     jour="Dimanche 17"
-                    artiste1="Artiste 4"
-                    artiste2="Artiste 6"
-                    artiste3="Artiste 7"
-                    artiste4="Artiste 8"
-                    artiste5="Artiste 9"/>
+                    artiste1="Les Fatals Picards"
+                    artiste2="Flagrants Délires"
+                    artiste3="Fills Monkey"
+                    artiste4="Sebkha-Chott"
+                    artiste5="Ministère Magouille"/>
             </div>
 
         
