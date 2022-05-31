@@ -9,12 +9,12 @@
 
     <!--Section 2 : Programme-->
 
-    <div class="bg-gray-900 text-white">
+    <div class="bg-gray-900">
       <section class="max-w-7xl m-auto p-10 pb-0 lg:pt-24 flex flex-row flex-wrap items-center gap-10 lg:gap-20">
 
         <h2 class="flex-none w-full">Rock en Stras’, c’est Quoi ? Quand ? Où ?</h2>
 
-        <div class="my-5 font-base text-base lg:text-lg leading-[2rem] basis-80 flex flex-col flex-auto">
+        <div class="my-5 font-base leading-[2rem] basis-80 flex flex-col flex-auto">
           <p class="mb-6 lg:mb-8">1er festival de Rock humoristique de Strasbourg.</p>
           <p class="mb-6 lg:mb-8">Rock en Stras’ aura lieu du vendredi 15 au dimanche 17 avril au Deux Rives à Strasbourg.</p>
           <p class="mb-6 lg:mb-8">Retrouvez sur 2 scènes vos artistes préférés !</p>
@@ -37,7 +37,7 @@
 
     <!--Section 3 : Les Artistes-->
 
-    <div class="bg-pink-500 text-white">
+    <div class="bg-pink-500 ">
       <section class="max-w-7xl m-auto px-8 pb-10 lg:pb-20 flex flex-row flex-wrap items-center gap-10 lg:gap-20">
 
         <h2 class="flex-none w-full">Qui vient à Rock en Stras’ ?</h2>
@@ -47,7 +47,7 @@
                      imgalt="Illustration d'un groupe de musique"/>
 
         <div class="basis-96 flex-auto flex flex-col gap-2 lg:gap-10">
-          <p class="font-base text-base lg:text-lg leading-8">Pas moins de 9 groupes et artistes seront présents sur les 3 jours du festival !</p>
+          <p class="leading-8">Pas moins de 9 groupes et artistes seront présents sur les 3 jours du festival !</p>
             
           <monButton>
             Découvrir tous les Artistes
@@ -59,7 +59,7 @@
 
     <!--Section 4 : Contact-->
 
-    <div class="bg-gray-900 text-white">
+    <div class="bg-gray-900">
       <section class="max-w-7xl m-auto px-8 py-10 lg:pb-20 flex flex-row flex-wrap items-center gap-10 lg:gap-20">
 
         <div class="flex-none w-full flex flex-row items-center justify-between">
@@ -71,7 +71,7 @@
 
         </div>
 
-        <div class="font-base text-base lg:text-lg leading-8">
+        <div class="leading-8">
           <p class="mb-6 lg:mb-8">Des détails pas claires ? Une information manquante ? Un problème ?</p>
           <p>Venez-donc nous écrire un message !</p>
         </div>

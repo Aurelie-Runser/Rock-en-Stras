@@ -6,16 +6,26 @@
     h1{
         @apply text-3xl;
         @apply font-h1;
+        @apply text-white;
     };
 
     h2{
         @apply text-2xl;
         @apply font-h2;
+        @apply text-white;
     };
 
     h3{
         @apply text-xl;
         @apply font-h3;
+        @apply text-white;
+    };
+
+    p{
+        @apply text-base;
+        @apply font-base; 
+        @apply text-white;
+        @apply lg:text-lg;
     }
 
     input, textarea{
