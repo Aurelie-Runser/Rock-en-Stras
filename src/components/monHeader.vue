@@ -13,12 +13,12 @@
                         :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">
 
                     <div v-if="!menuOuvert">
-                        <menuFerme class="w-[15vw] h-[15vw]"/>
+                        <menuFerme class="w-[60px] h-[60px]"/>
                         <span class="sr-only">boutton pour ouvrir le menu</span>
                     </div>
 
                     <div v-else>
-                        <menuOuvert class="w-[15vw] h-[15vw]"/>
+                        <menuOuvert class="w-[60px] h-[60px]"/>
                         <span class="sr-only">boutton pour fermer le menu</span>
                     </div>
 
@@ -27,7 +27,7 @@
 
             <!-- Menu phone -->
             <div id="menu"
-                class="fixed overflow-y-hidden -translate-y-full px-5 inset-0 bg-gradient-to-b from-pink-300 to-black motion-safe:duration-500 motion-safe:transition-transform md:hidden"
+                class="fixed overflow-y-hidden -translate-y-full px-12 inset-0 bg-gradient-to-b from-pink-300 to-black motion-safe:duration-500 motion-safe:transition-transform md:hidden"
                 :class="{ 'translate-y-0': menuOuvert }">
 
                 <ul class="my-24 font-h2 text-2xl text-white leading-loose">
