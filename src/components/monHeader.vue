@@ -7,18 +7,21 @@
                 </RouterLink>
             </div>
             <div>
-                <button class="relative z-50 sm:hidden"
+                <button class="relative z-50 md:hidden"
                         aria-haspopup="true"
                         aria-controls="menu"
                         :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">
 
-                    <img v-if="!menuOuvert" 
-                            src="../../public/menu/menuFerme.png" alt="boutton pour ouvrir le menu">
+                    <div v-if="!menuOuvert">
+                        <menuFerme class="w-[15vw] h-[15vw]"/>
+                        <span class="sr-only">boutton pour ouvrir le menu</span>
+                    </div>
 
-                    <img v-else
-                            src="../../public/menu/menuOuvert.png" alt="boutton pour fermer le menu">
+                    <div v-else>
+                        <menuOuvert class="w-[15vw] h-[15vw]"/>
+                        <span class="sr-only">boutton pour fermer le menu</span>
+                    </div>
 
-                    <span class="sr-only">Bouton du menu</span>
                 </button>
             </div>
 
@@ -50,6 +53,8 @@
 
 <script>
 import logoPetit from "../components/icons/logoPetit.vue"
+import menuFerme from "../components/icons/menuFerme.vue"
+import menuOuvert from "../components/icons/menuOuvert.vue"
 
 export default {
   name: "MonHeader",
@@ -58,6 +63,6 @@ export default {
       menuOuvert: false,
     };
   },
-  components: { logoPetit },
+  components: { logoPetit, menuFerme, menuOuvert },
 }
 </script>
