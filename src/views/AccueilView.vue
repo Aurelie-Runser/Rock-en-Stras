@@ -10,7 +10,7 @@
     <!--Section 2 : Programme-->
 
     <div class="bg-gray-900">
-      <section class="max-w-7xl m-auto p-10 pb-0 lg:pt-24 flex flex-row flex-wrap items-center gap-10 lg:gap-20">
+      <section class="max-w-7xl m-auto p-10 pb-0 lg:pt-24 flex flex-row flex-wrap justify-center items-center gap-10 lg:gap-20">
 
         <h2 class="flex-none w-full">Rock en Stras’, c’est Quoi ? Quand ? Où ?</h2>
 
@@ -19,7 +19,7 @@
           <p class="mb-6 lg:mb-8">Rock en Stras’ aura lieu du vendredi 15 au dimanche 17 avril au Deux Rives à Strasbourg.</p>
           <p class="mb-6 lg:mb-8">Retrouvez sur 2 scènes vos artistes préférés !</p>
 
-          <RouterLink to="/program">
+          <RouterLink to="/program" class="mx-auto">
             <monButton>
               Voir tout le Programme
             </monButton>
@@ -51,7 +51,7 @@
         <div class="basis-96 flex-auto flex flex-col gap-2 lg:gap-10">
           <p class="leading-8">Pas moins de 9 groupes et artistes seront présents sur les 3 jours du festival !</p>
             
-          <RouterLink to="/artistes">
+          <RouterLink to="/artistes" class="mx-auto">
             <monButton>
               Découvrir tous les Artistes
             </monButton>
@@ -82,7 +82,7 @@
 
         <div class="flex-none w-full my-0">
           <RouterLink to="/contact">
-            <monButton class="mx-auto rounded-r-[5rem] text-3xl">
+            <monButton class="mx-auto px-10 py-5 rounded-r-[5rem] text-3xl">
               Contacter
             </monButton>
           </RouterLink>
