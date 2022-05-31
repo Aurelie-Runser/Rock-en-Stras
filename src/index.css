@@ -35,7 +35,6 @@
         @apply bg-gray-700;
         @apply border-2;
         @apply border-white;
-        @apply skew-x-3;
         @apply text-base;
         @apply font-base; 
         @apply text-white;

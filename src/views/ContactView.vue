@@ -55,22 +55,22 @@
                     </textarea>
                 </div>
 
-                <div class="-skew-w-3">
-                    <input 
+                <div class="m-auto flex items-center my-5">
+                    <input class="flex-none m-5 lg:m-10 w-[30px] h-[30px]"
                         type="checkbox" 
                         id="object" 
                         name="user_object"
                         placeholder="Objet *"
                         required>
-                    <label for="object" class="font-base text-base text-white">J’ai lu, compris et accepte de partager ses informations et leur conditions d’utilisation.</label>   
-
-                    <p>* champs obligatoires</p>
+                    <label for="object" class=" font-base text-base lg:text-lg text-white">J’ai lu, compris et accepte de partager ses informations et leur conditions d’utilisation.</label>   
                 </div>
+
+                <p class="flex-none w-full text-sm">* champs obligatoires</p>
 
                 <div class="mx-auto max-w-lg">
                     <input class="mt-12 py-5 bg-pink-300_90 border-t-none border-pink-800 rounded-3xl text-xl font-button text-white
-                                hover:bg-black hover:border-b-gray-300 hover:border-r-gray-300
-                                focus:bg-black focus:border-b-gray-300 focus:border-r-gray-300"
+                                hover:bg-black hover:border-gray-300
+                                focus:bg-black focus:border-gray-300"
                         type="submit" 
                         name="envoyer" 
                         id="envoyer">
