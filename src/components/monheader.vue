@@ -29,21 +29,21 @@
 
                 <ul class="my-24 font-h2 text-2xl text-white leading-loose">
                     <li><RouterLink to="/" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert"
-                            class="hover:text-pink-500 focus:text-pink-500">Accueil</RouterLink></li>
+                            class="hover:text-gray-900 focus:text-gray-900">Accueil</RouterLink></li>
                     <li><RouterLink to="/program" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert"
-                            class="hover:text-pink-500 focus:text-pink-500">Programmation</RouterLink></li>
+                            class="hover:text-gray-900 focus:text-gray-900">Programmation</RouterLink></li>
                     <li><RouterLink to="/artistes" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert"
-                            class="hover:text-pink-500 focus:text-pink-500">Artistes</RouterLink></li>
+                            class="hover:text-gray-900 focus:text-gray-900">Artistes</RouterLink></li>
                     <li><RouterLink to="/contact" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert"
-                            class="hover:text-pink-500 focus:text-pink-500">Contact</RouterLink></li>
+                            class="hover:text-gray-900 focus:text-gray-900">Contact</RouterLink></li>
                 </ul>
             </div>
 
             <!-- Menu ordi -->
             <ul class="hidden my-2 flex-auto justify-end font-h3 text-xl gap-20 text-white md:flex">
-                <li><RouterLink to="/program" class="hover:text-pink-500 focus:text-pink-500">Programmation</RouterLink></li>
-                <li><RouterLink to="/artistes" class="hover:text-pink-500 focus:text-pink-500">Artistes</RouterLink></li>
-                <li><RouterLink to="/contact" class="hover:text-pink-500 focus:text-pink-500">Contact</RouterLink></li>
+                <li><RouterLink to="/program" class="hover:text-gray-900 focus:text-gray-900">Programmation</RouterLink></li>
+                <li><RouterLink to="/artistes" class="hover:text-gray-900 focus:text-gray-900">Artistes</RouterLink></li>
+                <li><RouterLink to="/contact" class="hover:text-gray-900 focus:text-gray-900">Contact</RouterLink></li>
             </ul>
         </nav>
 </template>
