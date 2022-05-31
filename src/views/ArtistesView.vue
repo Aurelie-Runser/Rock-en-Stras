@@ -7,11 +7,12 @@
                 <div class="max-w-5xl mx-auto
                     grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(15rem,auto))] gap-10">
 
-                    <cardArtiste class="w-full md:w-full xl:w-full h-cal"/>
-                    <cardArtiste class="w-full md:w-full xl:w-full h-cal"/>
-                    <cardArtiste class="w-full md:w-full xl:w-full h-cal"/>
-                    <cardArtiste class="w-full md:w-full xl:w-full h-cal"/>
-                    <cardArtiste class="w-full md:w-full xl:w-full h-cal"/>
+                    <cardArtiste class="w-full md:w-full xl:w-full"/>
+                    <cardArtiste class="w-full md:w-full xl:w-full"/>
+                    <cardArtiste class="w-full md:w-full xl:w-full"/>
+                    <cardArtiste class="w-full md:w-full xl:w-full"/>
+                    <cardArtiste class="w-full md:w-full xl:w-full"/>
+                    <cardArtiste class="w-full md:w-full xl:w-full"/>
                 </div>
             </div>
         
