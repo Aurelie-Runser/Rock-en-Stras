@@ -24,7 +24,7 @@
 
             <!-- Menu phone -->
             <div id="menu"
-                class="fixed -translate-y-full px-5 inset-0 bg-gradient-to-b from-pink-300 to-black motion-safe:duration-500 motion-safe:transition-transform md:hidden"
+                class="fixed overflow-y-hidden -translate-y-full px-5 inset-0 bg-gradient-to-b from-pink-300 to-black motion-safe:duration-500 motion-safe:transition-transform md:hidden"
                 :class="{ 'translate-y-0': menuOuvert }">
 
                 <ul class="my-24 font-h2 text-2xl text-white leading-loose">
