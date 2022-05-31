@@ -1,3 +1,6 @@
+const Nth = require('tailwind-nth-child')
+const nth2n =  new  Nth('2n','2n+1')
+
 module.exports = {
   content: [
     "./index.html",
@@ -29,5 +32,7 @@ module.exports = {
     },
 
   },
-  plugins: [],
+  plugins: [
+    nth2n.nthChild(),
+  ],
 }
