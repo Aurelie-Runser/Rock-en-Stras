@@ -35,6 +35,15 @@
                     artiste5="Ministère Magouille"/>
             </div>
 
+            <div>
+                <p>Pour avoir plus d’information, n’hésitez pas à aller jeter un œil à la page des artistes !</p>
+
+                <RouterLink to="artistes">
+                    <monButton class="m-auto">
+                        Découvrir tous les Artistes
+                    </monButton>
+                </RouterLink>
+            </div>
         
         </div>
     </div>
@@ -43,6 +52,7 @@
 
 <script>
 import programArt from "../components/programArt.vue"
+import monButton from "../components/monButton.vue"
 
 export default {
   name: "ProgramView",
@@ -50,6 +60,6 @@ export default {
     return {
     };
   },
-  components: { programArt },
+  components: { programArt, monButton },
 }
 </script>
