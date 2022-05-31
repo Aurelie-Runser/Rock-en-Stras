@@ -17,4 +17,14 @@
         @apply text-xl;
         @apply font-h3;
     }
+
+    input, textarea{
+        @apply my-5;
+        @apply p-3;
+        @apply w-full;
+        @apply bg-gray-700;
+        @apply border-2;
+        @apply border-white;
+        @apply skew-x-3;
+    }
 }
