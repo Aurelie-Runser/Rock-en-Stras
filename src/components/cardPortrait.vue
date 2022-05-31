@@ -1,6 +1,6 @@
 <template>
-    <div class="w-28 h-40 sm:w-48 sm:h-64 border-4 border-white border-dashed">
-        <img class="h-full object-cover" :src=image :alt=imgalt>
+    <div class="w-28 h-40 sm:w-48 sm:h-64 border-4 border-gray-300">
+        <img class="w-full h-full object-cover" :src=image :alt=imgalt>
     </div>
 </template>
 
