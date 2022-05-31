@@ -3,6 +3,6 @@
                     hover:bg-black hover:border-b-gray-300 hover:border-r-gray-300
                     focus:bg-black focus:border-b-gray-300 focus:border-r-gray-300
                     text-lg">
-        <p class="font-button mx-auto"><slot/></p>
+        <span class="font-button text-white mx-auto"><slot/></span>
     </button>
 </template>
