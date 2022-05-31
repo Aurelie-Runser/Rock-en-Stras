@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto my-16 w-full xs:w-[80%] lg:w-full flex flex-row gap-10 items-center">
+    <div class="mx-auto my-16 w-full xs:w-[80%] lg:w-full flex flex-wrap flex-row gap-10 items-center">
         
         <cardPortrait class="lg:hidden"/>
         <cardPaysage class="hidden lg:block"/>
@@ -15,6 +15,7 @@
                 <li>{{artiste5}}</li>
             </ul>
         </div>
+
     </div>
 </template>
 
@@ -22,14 +23,15 @@
 
 import cardPortrait from "../components/cardPortrait.vue"
 import cardPaysage from "../components/cardPaysage.vue"
+import monButton from "../components/monButton.vue"
 
 export default {
-  name: "ProgramView",
+  name: "ProgramArt",
   data() {
     return {
     };
   },
-  components: { cardPortrait, cardPaysage },
+  components: { cardPortrait, cardPaysage, monButton },
   
   props:{
     jour:{

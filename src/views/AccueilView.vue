@@ -10,7 +10,7 @@
     <!--Section 2 : Programme-->
 
     <div class="bg-gray-900">
-      <section class="max-w-7xl m-auto p-10 pb-0 lg:pt-24 flex flex-row flex-wrap justify-center items-center gap-10 lg:gap-20">
+      <section class="max-w-7xl m-auto px-5 py-10 pb-0 lg:pt-24 flex flex-row flex-wrap justify-center items-center gap-10 lg:gap-20">
 
         <h2 class="flex-none w-full">Rock en Stras’, c’est Quoi ? Quand ? Où ?</h2>
 
@@ -40,7 +40,7 @@
     <!--Section 3 : Les Artistes-->
 
     <div class="bg-pink-500 ">
-      <section class="max-w-7xl m-auto px-8 pb-10 lg:pb-20 flex flex-row flex-wrap items-center gap-10 lg:gap-20">
+      <section class="max-w-7xl m-auto px-5 pb-10 lg:pb-20 flex flex-row flex-wrap items-center gap-10 lg:gap-20">
 
         <h2 class="flex-none w-full">Qui vient à Rock en Stras’ ?</h2>
 
@@ -69,7 +69,7 @@
         <div class="flex-none w-full flex flex-row items-center justify-between">
         <h2 class="inline-block">Besoin de renseignement ?</h2>
 
-        <img class="hidden sm:inline-block"
+        <img class="hidden m-auto w-36 sm:inline-block lg:w-48"
               src="/lettre.png" 
               alt="dessin d'une enveloppe">
 

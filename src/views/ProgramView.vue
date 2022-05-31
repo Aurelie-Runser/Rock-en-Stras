@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gray-900 px-10 py-36 ">
+    <div class="bg-gray-900 px-5 py-36 ">
         <div class="m-auto max-w-7xl">
             <div class="gap-5">
                 <h1 class="mb-12">Rock en Stras’, c’est Quoi ? Quand ? Où ?</h1>
