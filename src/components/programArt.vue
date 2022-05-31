@@ -17,9 +17,11 @@
         </div>
 
         <div class="flex-none w-full -mt-12">
-          <monButton class="mx-auto">
-            Voir le programme du jour en détail
-          </monButton>
+          <RouterLink to="/">
+            <monButton class="mx-auto">
+              Voir le programme du jour en détail
+            </monButton>
+            </RouterLink>
         </div>
 
     </div>
