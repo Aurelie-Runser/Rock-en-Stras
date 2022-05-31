@@ -27,7 +27,7 @@
 
         </div>
 
-        <cardPaysage image="../../public/paysage.jpg"
+        <cardPaysage image="/paysage.jpg"
                       imgalt="Le Jardin des Deux Rives à Strasbourg, le lieu du festvival"
                       class="flex-none"/>
 
@@ -45,7 +45,7 @@
         <h2 class="flex-none w-full">Qui vient à Rock en Stras’ ?</h2>
 
         <cardArtiste class="m-auto"
-                     image="public\groupe.jpg"
+                     image="/groupe.jpg"
                      imgalt="Illustration d'un groupe de musique"/>
 
         <div class="basis-96 flex-auto flex flex-col gap-2 lg:gap-10">
@@ -70,7 +70,7 @@
         <h2 class="inline-block">Besoin de renseignement ?</h2>
 
         <img class="hidden sm:inline-block"
-              src="../../public/lettre.png" 
+              src="/lettre.png" 
               alt="dessin d'une enveloppe">
 
         </div>
