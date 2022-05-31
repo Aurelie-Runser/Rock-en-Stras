@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full p-7 bg-gray-300 text-pink-500 font-base">
+    <div class="w-full p-7 bg-gray-300">
         <div class="flex flex-wrap items-center justify-around gap-8">
             <div>
                 <RouterLink to="/">
@@ -22,19 +22,16 @@
                 </a>
             </div>
 
-            <div>
                 <RouterLink to="/contact">
-                    <p>Nous contacter</p>
+                    <p class="font-base text-pink-500">Nous contacter</p>
                 </RouterLink>
-            </div>
 
-            <div>
-                <p>Mentions légales</p>
-            </div>
+                <p class="font-base text-pink-500">Mentions légales</p>
+            
         </div>
 
         <div class="mt-6 text-center">
-            <p>© MMI Montbéliard - 2022</p>
+            <p class="font-base text-pink-500">© MMI Montbéliard - 2022</p>
         </div>
     </div>
 </template>
