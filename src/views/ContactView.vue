@@ -1,11 +1,13 @@
 <template>
     <div class="bg-gray-900 px-10 py-36 ">
         <div class="m-auto max-w-3xl">
-            <div class="">
-                <h1>Contact</h1>
-                <img class="hidden sm:inline-block"
-                    src="../../public/lettre.png" 
-                    alt="dessin d'une enveloppe">
+            <div>
+                <div class="flex justify-between items-center">
+                    <h1>Contact</h1>
+                    <img class="hidden sm:inline-block w-40 md:w-52"
+                        src="../../public/lettre.png" 
+                        alt="dessin d'une enveloppe">
+                </div>
 
                 <div class="my-5">
                     <p class="mb-6 lg:mb-8">Des détails pas claires ? Une information manquante ? Un problème ?</p>
