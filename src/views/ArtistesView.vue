@@ -7,12 +7,23 @@
                 <div class="max-w-5xl mx-auto
                     grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(15rem,auto))] gap-10">
 
-                    <cardArtiste class="w-full md:w-full xl:w-full"/>
-                    <cardArtiste class="w-full md:w-full xl:w-full"/>
-                    <cardArtiste class="w-full md:w-full xl:w-full"/>
-                    <cardArtiste class="w-full md:w-full xl:w-full"/>
-                    <cardArtiste class="w-full md:w-full xl:w-full"/>
-                    <cardArtiste class="w-full md:w-full xl:w-full"/>
+                    <cardArtiste class="w-full md:w-full xl:w-full"
+                        v-for="n in 9"
+                        :key="n"
+                        :image="`/groupe/groupe-${n}.jpg`"
+                        alt="photo du groupe"/>
+
+                    <!--
+                        ultra vomit
+                        fatal picard
+                        flagran delir
+                        Fills Monkey
+                        elmer food beat
+                        Ministère Magouille
+                        salut c'est cool
+                        Sebkha-Chott
+                        bidochon
+                    -->
                 </div>
             </div>
         
