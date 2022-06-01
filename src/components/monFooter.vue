@@ -10,15 +10,15 @@
 
             <div class="flex gap-4 items-center">
                 <a href="https://fr-fr.facebook.com/">
-                    <facebookJour class="w-12 h-12"/>
+                    <facebookIcon class="w-12 h-12"/>
                 </a>
 
                 <a href="https://www.instagram.com/">
-                        <instaJour class="w-14 h-14"/>
+                        <instaIcon class="w-14 h-14"/>
                 </a>
 
                 <a href="https://twitter.com/?lang=fr">
-                        <twitterJour class="w-12 h-12"/>
+                        <twitterIcon class="w-12 h-12"/>
                 </a>
             </div>
 
@@ -38,9 +38,9 @@
 
 <script>
 import logoPetit from "../components/icons/logoPetit.vue"
-import facebookJour from "../components/icons/facebookJour.vue"
-import instaJour from "../components/icons/instaJour.vue"
-import twitterJour from "../components/icons/twitterJour.vue"
+import facebookIcon from "./icons/facebook.vue"
+import instaIcon from "./icons/insta.vue"
+import twitterIcon from "./icons/twitter.vue"
 
 export default {
   name: "monFooter",
@@ -48,6 +48,6 @@ export default {
     return {
     };
   },
-  components: { logoPetit, facebookJour, instaJour, twitterJour },
+  components: { logoPetit, facebookIcon, instaIcon, twitterIcon },
 }
 </script>
