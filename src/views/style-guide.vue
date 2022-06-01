@@ -72,6 +72,7 @@
                         <facebookIcon class="w-12 h-12"/>
                         <instaIcon class="w-14 h-14"/>
                         <twitterIcon class="w-12 h-12"/>
+                        <youtubeIcon class="w-12 h-12"/>
                     </div>
                     <separateurRose class="w-96"/>
                 </div>
@@ -86,6 +87,7 @@
                         <cardPaysage image="/paysage.jpg"/>
                         <cardPortrait image="/groupe.jpg"/>
                         <cardArtiste image="/groupe.jpg"/>
+                        <infoArtiste/>
                         <programArt image="/paysage.jpg"
                                     jour="Jour"
                                     artiste1="Artiste 1"
@@ -109,11 +111,13 @@ import separateurRose from "../components/icons/separateurRose.vue"
 import facebookIcon from "../components/icons/facebook.vue"
 import instaIcon from "../components/icons/insta.vue"
 import twitterIcon from "../components/icons/twitter.vue"
+import youtubeIcon from "../components/icons/youtubeIcon.vue"
 
 import monButton from "../components/monButton.vue"
 import cardPaysage from "../components/cardPaysage.vue"
 import cardPortrait from "../components/cardPortrait.vue"
 import cardArtiste from "../components/cardArtiste.vue"
+import infoArtiste from "../components/infoArtiste.vue"
 import programArt from "../components/programArt.vue"
 
 export default {
@@ -122,7 +126,7 @@ export default {
     return {
     };
   },
-  components: { logoGrand, logoPetit, menuFerme, menuOuvert, separateurRose, facebookIcon, instaIcon, twitterIcon,
-                monButton, cardPaysage, cardPortrait, cardArtiste, programArt },
+  components: { logoGrand, logoPetit, menuFerme, menuOuvert, separateurRose, facebookIcon, instaIcon, twitterIcon, youtubeIcon,
+                monButton, cardPaysage, cardPortrait, cardArtiste, infoArtiste, programArt },
 }
 </script>
