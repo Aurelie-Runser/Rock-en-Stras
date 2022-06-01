@@ -23,15 +23,15 @@
             </div>
 
                 <RouterLink to="/contact">
-                    <p class="font-base text-pink-500">Nous contacter</p>
+                    <p class="font-base text-pink">Nous contacter</p>
                 </RouterLink>
 
-                <p class="font-base text-pink-500">Mentions légales</p>
+                <p class="font-base text-pink">Mentions légales</p>
             
         </div>
 
         <div class="mt-6 text-center">
-            <p class="font-base text-pink-500">© MMI Montbéliard - 2022</p>
+            <p class="font-base text-pink">© MMI Montbéliard - 2022</p>
         </div>
     </div>
 </template>

@@ -3,28 +3,40 @@
 @tailwind utilities;
 
 @layer base{
+    .bg-pink{
+        @apply bg-pink-500;
+    };
+
+    .bg-base{
+        @apply bg-gray-900;
+    };
+
+    .text-pink{
+        @apply text-pink-500;
+    };
+
     h1{
         @apply text-3xl;
         @apply font-h1;
-        @apply text-white;
+        @apply text-gray-100;
     };
 
     h2{
         @apply text-2xl;
         @apply font-h2;
-        @apply text-white;
+        @apply text-gray-100;
     };
 
     h3{
         @apply text-xl;
         @apply font-h3;
-        @apply text-white;
+        @apply text-gray-100;
     };
 
     p{
         @apply text-base;
         @apply font-base; 
-        @apply text-white;
+        @apply text-gray-100;
         @apply lg:text-lg;
     }
 
@@ -37,7 +49,7 @@
         @apply border-white;
         @apply text-base;
         @apply font-base; 
-        @apply text-white;
+        @apply text-gray-100;
         @apply focus:bg-gray-300;
         @apply focus:text-gray-900;
     }

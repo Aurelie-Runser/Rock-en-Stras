@@ -9,7 +9,7 @@
 
     <!--Section 2 : Programme-->
 
-    <div class="bg-gray-900">
+    <div class="bg-base">
       <section class="max-w-7xl m-auto px-5 py-10 pb-0 lg:pt-24 flex flex-row flex-wrap justify-center items-center gap-10 lg:gap-20">
 
         <h2 class="flex-none w-full">Rock en Stras’, c’est Quoi ? Quand ? Où ?</h2>
@@ -39,7 +39,7 @@
 
     <!--Section 3 : Les Artistes-->
 
-    <div class="bg-pink-500 ">
+    <div class="bg-pink ">
       <section class="max-w-7xl m-auto px-5 pb-10 lg:pb-20 flex flex-row flex-wrap items-center gap-10 lg:gap-20">
 
         <h2 class="flex-none w-full">Qui vient à Rock en Stras’ ?</h2>
@@ -63,7 +63,7 @@
 
     <!--Section 4 : Contact-->
 
-    <div class="bg-gray-900">
+    <div class="bg-base">
       <section class="max-w-7xl m-auto px-8 py-10 lg:pb-20 flex flex-row flex-wrap items-center gap-10 lg:gap-20">
 
         <div class="flex-none w-full flex flex-row items-center justify-between">
@@ -84,6 +84,28 @@
           <RouterLink to="/contact">
             <monButton class="mx-auto px-10 py-5 rounded-r-[5rem] text-3xl">
               Contacter
+            </monButton>
+          </RouterLink>
+        </div>
+
+      </section>
+
+      <separateurRose1 class="mt-5 w-screen"/>
+
+    </div>
+
+    <!--Section 5 : Guide de style-->
+
+    <div class="bg-pink">
+      <section class="max-w-7xl m-auto px-5 pb-10 lg:pb-20 flex flex-row flex-wrap items-center gap-10 lg:gap-20">
+
+        <h2 class="flex-none w-full">Guide de Style</h2>
+
+        
+        <div class="basis-96 flex-auto flex flex-col gap-2 lg:gap-10">           
+          <RouterLink to="/styleGuide" class="mx-auto">
+            <monButton  class="mx-auto px-10 py-5 rounded-r-[5rem] text-3xl">
+              Découvrir le Guide de Style
             </monButton>
           </RouterLink>
         </div>

@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-pink-500 px-5 py-36 ">
+    <div class="bg-pink px-5 py-36 ">
         <div class="m-auto max-w-7xl">
             <h1 class="mb-12">Qui vient à Rock en Stras’ ?</h1>
 
