@@ -22,7 +22,7 @@
                         :key="n">
              
                         <div class="overflow-hidden w-full aspect-video border-4 border-gray-300 skew-y-3">
-                            <img class="-mt-7 w-full h-[130%] object-cover center -skew-y-3" src="/groupe/groupe-1.jpg" alt="imgalt">
+                            <img class="-mt-7 w-full h-[130%] object-cover center -skew-y-3" :src="`/groupe/groupe-${n}.jpg`" alt="imgalt">
                         </div>
 
                     </RouterLink>
