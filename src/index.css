@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
-    clip-info{
-        clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
-     }
-}
-
 @layer base{
     .bg-pink{
         @apply bg-pink-500;

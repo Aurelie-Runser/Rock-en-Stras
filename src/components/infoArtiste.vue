@@ -1,5 +1,5 @@
 <template>
-    <div class="clip-info mx-auto my-12 p-7 flex max-w-sm basis-20 flex-initial flex-wrap gap-5 justify-center border-4 border-gray-300 bg-gray-700">
+    <div class="mx-auto my-12 p-7 flex max-w-sm basis-20 flex-initial flex-wrap gap-5 justify-center border-4 border-gray-300 bg-gray-700">
         <div>
             <h2>Vendredi 15</h2>
             <h2>Scène 1</h2>
