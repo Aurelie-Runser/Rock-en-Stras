@@ -21,7 +21,7 @@ const router = createRouter({
     { path: '/concert', name: 'Concert', component: ConcertView },
     { path: '/groupe', name: 'Groupe', component: GroupeView },
 
-    { path: '/styleGuide', name: 'styleGuide', component: styleGuide },
+    { path: '/style-guide', name: 'style-guide', component: styleGuide },
     { path: '/:pathMatch(.*)*', name: 'Page404', component: Page404 },
   ]
 })

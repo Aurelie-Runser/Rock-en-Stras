@@ -103,7 +103,7 @@
 
         
         <div class="basis-96 flex-auto flex flex-col gap-2 lg:gap-10">           
-          <RouterLink to="/styleGuide" class="mx-auto">
+          <RouterLink to="/style-guide" class="mx-auto">
             <monButton  class="mx-auto px-10 py-5 rounded-r-[5rem] text-3xl">
               Découvrir le Guide de Style
             </monButton>
