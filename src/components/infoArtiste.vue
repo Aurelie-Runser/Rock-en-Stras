@@ -21,7 +21,7 @@ import instaIcon from "./icons/insta.vue"
 import twitterIcon from "./icons/twitter.vue"
 
 export default {
-  name: "monFooter",
+  name: "infoArtiste",
   data() {
     return {
     };
