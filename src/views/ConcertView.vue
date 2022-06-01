@@ -3,14 +3,14 @@
         <h1 class="mb-12">Concerts du ???</h1>
 
         <!--Scène 1-->
-        <div class="flex flex-col max-w-4xl mx-auto my-20">
-            <div class="flex flex-wrap justify-between items-center w-full sm:w-[80%] lg:w-full">
-                <div>
+        <div class="flex flex-col max-w-6xl mx-auto my-20">
+            <div class="flex flex-wrap justify-between items-center w-full sm:w-[80%] lg:w-full gap-x-5 lg:gap-x-10">
+                <div class="basis-12 flex-grow">
                     <h2>Scène 1</h2>
 
                     <ul class="font-semibold text-base sm:text-lg lg:text-xl leading-10 sm:leading-[4rem] lg:leading-[5rem] text-gray-100 nth-child-2n:text-pink">
                         <li>14h - 16h :</li>
-                        <li>16h30h - 18h30 :</li>
+                        <li>16h30h - 18h30 : </li>
                         <li>19h - 22h :</li>
                     </ul>
                 </div>
@@ -31,14 +31,14 @@
            
 
         <!--Scène 2-->
-        <div class="flex flex-col max-w-4xl mx-auto my-20">
-            <div class="flex flex-row-reverse flex-wrap justify-between items-center w-full sm:w-[80%] lg:w-full">
-                <div>
+        <div class="flex flex-col max-w-6xl mx-auto my-20">
+            <div class="flex flex-row-reverse flex-wrap justify-between items-center w-full sm:w-[80%] lg:w-full gap-x-5 lg:gap-x-10">
+                <div class="basis-12 flex-grow">
                     <h2>Scène 2</h2>
 
                     <ul class="font-semibold text-base sm:text-lg lg:text-xl leading-10 sm:leading-[4rem] lg:leading-[5rem] text-gray-100 nth-child-2n:text-pink">
                         <li>14h - 16h :</li>
-                        <li>16h30h - 18h30 :</li>
+                        <li>16h30h - 18h30 : </li>
                         <li>19h - 22h :</li>
                     </ul>
                 </div>
