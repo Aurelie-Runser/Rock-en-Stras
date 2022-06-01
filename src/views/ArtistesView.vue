@@ -21,9 +21,15 @@
                         v-for="n in 9"
                         :key="n">
              
-                        <div class="overflow-hidden w-full aspect-video border-4 border-gray-300 skew-y-3">
+                        <div class="relative overflow-hidden w-full aspect-video border-4 border-gray-300 skew-y-3">
                             <img class="-mt-7 w-full h-[130%] object-cover center -skew-y-3" :src="`/groupe/groupe-${n}.jpg`" alt="imgalt">
+                            <div class="absolute z-10 top-0 bottom-0 right-0 left-0 flex justify-center items-center text-center bg-gray-700_50">
+                                <h3>Artiste</h3>
+                            </div>
                         </div>
+
+                        
+
 
                     </RouterLink>
 
