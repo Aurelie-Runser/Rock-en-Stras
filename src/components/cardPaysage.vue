@@ -1,5 +1,5 @@
 <template>
-    <div class="aspect-video w-72 md:w-96 xl:w-[30rem] border-4 border-gray-300">
+    <div class="aspect-[13/16] md:aspect-video w-[40vw] min-w-[200px] border-4 border-gray-300">
         <img class="w-full h-full object-cover" :src=image :alt=imgalt>
     </div>
 </template>
