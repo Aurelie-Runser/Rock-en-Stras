@@ -1,19 +1,21 @@
 <template>
-    <div class="clip-info border-4 p-5 border-gray-300 bg-gray-700">
+    <div class="clip-info p-7 flex max-w-sm basis-20 flex-initial flex-wrap gap-5 justify-center border-4 border-gray-300 bg-gray-700">
         <div>
-            <h2>Date</h2>
-            <h2>Scène</h2>
+            <h2>Vendredi 15</h2>
+            <h2>Scène 1</h2>
         </div>
 
-        <div>
-            <h2>Date</h2>
-            <h2>Scène</h2>
+        <div class="flex-none grid grid-cols-2 gap-2">
+            <youtubeIcon class="w-12 h-12"/>
+            <instaIcon class="w-14 h-14"/>
+            <facebookIcon class="w-12 h-12"/>
+            <twitterIcon class="w-12 h-12"/>
         </div>
     </div>
 </template>
 
 <script>
-import logoPetit from "../components/icons/logoPetit.vue"
+import youtubeIcon from "../components/icons/youtubeIcon.vue"
 import facebookIcon from "./icons/facebook.vue"
 import instaIcon from "./icons/insta.vue"
 import twitterIcon from "./icons/twitter.vue"
@@ -24,6 +26,6 @@ export default {
     return {
     };
   },
-  components: { logoPetit, facebookIcon, instaIcon, twitterIcon },
+  components: { youtubeIcon, facebookIcon, instaIcon, twitterIcon },
 }
 </script>
