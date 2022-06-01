@@ -8,7 +8,7 @@
                     <h2 class="my-12">Style de Musique</h2>
                 </div>
 
-            <cardArtiste class="flex-none mx-auto sm:mx-0"
+            <cardArtiste class="flex-none mx-auto md:mx-0"
                 image="/groupe.jpg"/>
             
             </div>
