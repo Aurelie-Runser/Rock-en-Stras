@@ -1,7 +1,7 @@
 <template>
     <div class="mx-auto my-16 w-full xs:w-[80%] lg:w-full flex flex-row gap-10 items-center">
         
-        <card/>
+        <cardPortrait class="lg:hidden"/>
 
         <div class="text-white font-base mx-auto">
             <h4 class="font-semibold text-base lg:text-lg mx-5 mb-5 sm:mx-10">{{jour}}</h4>
@@ -19,7 +19,8 @@
 
 <script>
 
-import card from "./cardBase.vue"
+import cardPortrait from "./card.vue"
+import cardPaysage from "./card.vue"
 
 export default {
   name: "ProgramView",
@@ -27,7 +28,7 @@ export default {
     return {
     };
   },
-  components: { card, },
+  components: { cardPortrait, cardPaysage },
   
   props:{
     jour:{
