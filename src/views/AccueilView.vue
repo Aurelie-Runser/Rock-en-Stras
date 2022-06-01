@@ -27,7 +27,7 @@
 
         </div>
 
-        <cardPaysage image="/paysage.jpg"
+        <card image="/paysage.jpg"
                       imgalt="Le Jardin des Deux Rives à Strasbourg, le lieu du festvival"
                       class="flex-none"/>
 
@@ -118,7 +118,7 @@
 
 <script>
 import logoGrand from "../components/icons/logoGrand.vue"
-import cardPaysage from "../components/cardPaysage.vue"
+import card from "../components/cardBase.vue"
 import cardArtiste from "../components/cardArtiste.vue"
 import monButton from "../components/monButton.vue"
 import separateurRose from "../components/icons/separateurRose.vue"
@@ -129,6 +129,6 @@ export default {
     return {
     };
   },
-  components: { logoGrand, cardPaysage, cardArtiste, monButton, separateurRose },
+  components: { logoGrand, card, cardArtiste, monButton, separateurRose },
 }
 </script>

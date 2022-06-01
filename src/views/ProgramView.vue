@@ -57,12 +57,44 @@
 import programArt from "../components/programArt.vue"
 import monButton from "../components/monButton.vue"
 
+import { 
+    getFirestore,   // Obtenir le Firestore
+    collection,     // Utiliser une collection de documents
+    doc,            // Obtenir un document par son id
+    getDocs,        // Obtenir la liste des documents d'une collection
+    addDoc,         // Ajouter un document à une collection
+    updateDoc,      // Mettre à jour un document dans une collection
+    deleteDoc,      // Supprimer un document d'une collection
+    onSnapshot,     // Demander une liste de documents d'une collection, en les synchronisant
+    query,          // Permet d'effectuer des requêtes sur Firestore
+    orderBy         // Permet de demander le tri d'une requête query
+    } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js'
+
+
 export default {
   name: "ProgramView",
+  components: { programArt, monButton },
+
   data() {
     return {
+        listeJour : []
     };
   },
-  components: { programArt, monButton },
+/*
+  mounted(){
+      // appel liste jour
+      this.getJour();
+  },
+
+  methods:{
+      async getJour(){
+        const firestore = getFirestore();
+        const dbJour = collection(firestore, "jour");
+        const query = await onSnapshot(dbJour, (snapshot) =>{
+            this.listeJour = snapshot.docs.map(doc => ({id:doc.id, ...doc.data()}))
+        console.log("jour : ", this.listeJour)
+        })
+      },
+  }*/
 }
 </script>

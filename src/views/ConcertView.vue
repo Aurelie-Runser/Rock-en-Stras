@@ -15,10 +15,7 @@
                     </ul>
                 </div>
 
-                <cardPortrait class="lg:hidden"
-                    image="/scene1po.jpg" imgalt="photo de la scène 1"/>
-                <cardPaysage class="hidden lg:block"
-                    image="/scene1pa.jpg" imgalt="photo de la scène 2"/>
+                <card image="/scene1.jpg" imgalt="photo de la scène 1"/>
 
             </div>
 
@@ -43,10 +40,7 @@
                     </ul>
                 </div>
 
-                <cardPortrait class="lg:hidden"
-                    image="/scene2po.jpg" imgalt="photo de la scène 1"/>
-                <cardPaysage class="hidden lg:block"
-                    image="/scene2pa.jpg" imgalt="photo de la scène 2"/>
+                <card image="/scene2.jpg" imgalt="photo de la scène 2"/>
 
             </div>
 
@@ -62,8 +56,7 @@
 
 <script>
 import monButton from "../components/monButton.vue"
-import cardPortrait from "../components/cardPortrait.vue"
-import cardPaysage from "../components/cardPaysage.vue"
+import card from "../components/cardBase.vue"
 
 export default {
   name: "ConcertView",
@@ -71,6 +64,6 @@ export default {
     return {
     };
   },
-  components: { monButton, cardPortrait, cardPaysage },
+  components: { monButton, card },
 }
 </script>

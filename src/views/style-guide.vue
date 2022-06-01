@@ -84,8 +84,7 @@
                     <div class="p-5 flex flex-wrap items-center justify-around gap-10 bg-gray-900">
                
                         <monButton>Mon Bouton </monButton>
-                        <cardPaysage image="/paysage.jpg"/>
-                        <cardPortrait image="/groupe.jpg"/>
+                        <card image="/paysage.jpg"/>
                         <cardArtiste image="/groupe.jpg"/>
                         <infoArtiste/>
                         <programArt image="/paysage.jpg"
@@ -114,8 +113,7 @@ import twitterIcon from "../components/icons/twitter.vue"
 import youtubeIcon from "../components/icons/youtubeIcon.vue"
 
 import monButton from "../components/monButton.vue"
-import cardPaysage from "../components/cardPaysage.vue"
-import cardPortrait from "../components/cardPortrait.vue"
+import card from "../components/cardBase.vue"
 import cardArtiste from "../components/cardArtiste.vue"
 import infoArtiste from "../components/infoArtiste.vue"
 import programArt from "../components/programArt.vue"
@@ -127,6 +125,6 @@ export default {
     };
   },
   components: { logoGrand, logoPetit, menuFerme, menuOuvert, separateurRose, facebookIcon, instaIcon, twitterIcon, youtubeIcon,
-                monButton, cardPaysage, cardPortrait, cardArtiste, infoArtiste, programArt },
+                monButton, card, cardArtiste, infoArtiste, programArt },
 }
 </script>
