@@ -94,21 +94,28 @@
 
     </div>
 
-    <!--Section 5 : Guide de style-->
+    <!--Section 5 : Se connecter-->
 
     <div class="bg-pink">
-      <section class="max-w-7xl m-auto px-5 pb-10 lg:pb-20 flex flex-row flex-wrap items-center gap-10 lg:gap-20">
+      <section class="max-w-7xl m-auto px-5 pb-10 lg:pb-20 ">
 
-        <h2 class="flex-none w-full">Guide de Style</h2>
+        <h2 class="mb-10">Compte</h2>
 
-        
-        <div class="basis-96 flex-auto flex flex-col gap-2 lg:gap-10">           
+        <p>Vous avez un compte ? Pensez à vous connecter !</p>
+
+        <div class="">           
           <RouterLink to="/style-guide" class="mx-auto">
-            <monButton  class="mx-auto px-10 py-5 rounded-r-[5rem] text-3xl">
-              Découvrir le Guide de Style
+            <monButton class="mx-auto px-10 py-5 rounded-r-[5rem] text-2xl">
+              Se conncecter
             </monButton>
           </RouterLink>
         </div>
+          
+          <RouterLink to="/style-guide" class="mx-auto">
+            <monButton>
+              Découvrir le Guide de Style
+            </monButton>
+          </RouterLink>
 
       </section>
     </div>
