@@ -7,11 +7,25 @@
                 <div class="max-w-5xl mx-auto
                     grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(15rem,auto))] gap-10">
 
+                    <!-- Version non intégré
                     <cardArtiste class="w-full md:w-full xl:w-full"
                         v-for="n in 9"
                         :key="n"
                         :image="`/groupe/groupe-${n}.jpg`"
-                        alt="photo du groupe"/>
+                        alt="photo du groupe">
+                           
+                    </cardArtiste>
+                    -->
+
+                    <RouterLink to="/groupe"
+                        v-for="n in 9"
+                        :key="n">
+             
+                        <div class="overflow-hidden w-full aspect-video border-4 border-gray-300 skew-y-3">
+                            <img class="-mt-7 w-full h-[130%] object-cover center -skew-y-3" src="/groupe/groupe-1.jpg" alt="imgalt">
+                        </div>
+
+                    </RouterLink>
 
                     <!--
                         ultra vomit
