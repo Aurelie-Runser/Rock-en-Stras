@@ -1,30 +1,10 @@
 <template>
     <div class="bg-base px-5 py-36 ">
         <div class="m-auto max-w-3xl">
-            <div>
-                <div class="flex justify-between items-center">
-                    <h1>Contact</h1>
-                    <img class="hidden sm:inline-block w-40 md:w-52"
-                        src="../../public/lettre.png" 
-                        alt="dessin d'une enveloppe">
-                </div>
+            <h1 class="mb-5">Mon Compte</h1>
+                
 
-                <div class="my-5">
-                    <p class="mb-6 lg:mb-8">Des détails pas claires ? Une information manquante ? Un problème ?</p>
-                    <p>Écrirez-nous un message !</p>
-                </div>
-            </div>
-
-            <form class="flex flex-wrap justify-between gap-x-12">
-                <div class="basis-72 flex-grow">
-                    <label for="name" class="sr-only">Nom Prénom (obligatoire)</label>
-                    <input 
-                        type="text" 
-                        id="name" 
-                        name="user_name"
-                        placeholder="Nom Prénom *"
-                        required>
-                </div>
+            <form class="flex flex-wrap justify-evenly gap-x-10 gap-y-5">
             
                 <div class="basis-72 flex-grow">
                     <label for="name" class="sr-only">Adresse mail (obligatoire)</label>
@@ -32,51 +12,37 @@
                         type="text" 
                         id="mail" 
                         name="user_mail"
-                        placeholder="Adresse mail *"
-                        required>
+                        placeholder="Adresse mail"
+                        required/>
                 </div>
-            
-                <div class="flex-none w-full">
-                    <label for="object" class="sr-only">Objet (obligatoire)</label>
+
+                <div class="basis-72 flex-grow">
+                    <label for="name" class="sr-only">Mot de passe</label>
                     <input 
                         type="text" 
-                        id="object" 
-                        name="user_object"
-                        placeholder="Objet *"
-                        required>
+                        id="name" 
+                        name="user_name"
+                        placeholder="Mot de passe"
+                        required/>
+                </div>
+
+                <div class="flex-none mx-auto p-5 w-full bg-pink-300 text-center text-gray-900" role="alert">
+                    Vous n'etes pas connecter
                 </div>
             
-                <div class="flex-none w-full">
-                    <label for="message" class="sr-only">Message (obligatoire)</label>
-                    <textarea 
-                        id="message" 
-                        name="user_message"
-                        placeholder="Message *"
-                        rows="10"
-                        required>
-                    </textarea>
-                </div>
-
-                <div class="m-auto flex items-center my-5">
-                    <input class="flex-none m-5 lg:m-10 w-[30px] h-[30px]"
-                        type="checkbox" 
-                        id="object" 
-                        name="user_object"
-                        placeholder="Objet *"
-                        required>
-                    <label for="object" class=" font-base text-base lg:text-lg text-white">J’ai lu, compris et accepte de partager ses informations et leur conditions d’utilisation.</label>   
-                </div>
-
-                <p class="flex-none w-full text-sm">* champs obligatoires</p>
-
-                <div class="mx-auto max-w-lg">
-                    <input class="mt-12 px-10 py-5 bg-pink-300_90 border-t-none border-pink-800 rounded-3xl text-xl font-button text-white
+                    <button type="submit"
+                        class="mt-12 px-7 sm:px-10 py-5 bg-pink-300_90 border-4 border-pink-800 rounded-3xl text-lg sm:text-xl text-white font-button
                                 hover:bg-black hover:border-gray-300
-                                focus:bg-black focus:border-gray-300"
-                        type="submit" 
-                        name="envoyer" 
-                        id="envoyer">
-                </div>
+                                focus:bg-black focus:border-gray-300">
+                        Connexion
+                    </button>
+
+                    <button type="button"
+                        class="mt-12 px-7 sm:px-10 py-5 bg-pink-300_90 border-4 border-pink-800 rounded-3xl text-lg sm:text-xl text-white font-button
+                                hover:bg-black hover:border-gray-300
+                                focus:bg-black focus:border-gray-300">
+                        Deconnexion
+                    </button>
             </form>
         </div>
     </div>
