@@ -108,6 +108,12 @@
               Découvrir le Guide de Style
             </monButton>
           </RouterLink>
+
+          <RouterLink to="/Page404" class="mx-auto">
+            <monButton>
+              404
+            </monButton>
+          </RouterLink>
         </div>
 
       </section>
