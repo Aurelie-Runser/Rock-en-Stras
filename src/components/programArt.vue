@@ -25,7 +25,6 @@
 
 <script>
 
-import cardPortrait from "../components/cardPortrait.vue"
 import card from "./cardBase.vue"
 import monButton from "../components/monButton.vue"
 
