@@ -28,9 +28,6 @@
                             </div>
                         </div>
 
-                        
-
-
                     </RouterLink>
 
                     <!--

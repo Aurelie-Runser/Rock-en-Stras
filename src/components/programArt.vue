@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto my-16 w-full xs:w-[80%] lg:w-full flex flex-wrap flex-row gap-10 items-center">
+    <div class="mx-auto my-16 w-full xs:w-[80%] lg:w-full flex flex-wrap flex-row gap-x-10 justify-center items-center">
         
         <cardPortrait class="lg:hidden"
           :image="image"/>
@@ -15,9 +15,14 @@
                 <li>{{artiste3}}</li>
                 <li>{{artiste4}}</li>
                 <li>{{artiste5}}</li>
-            </ul>
+            </ul>           
         </div>
 
+        <RouterLink to="/concert" class="flex-none flex justify-center w-full">
+          <monButton>
+            Voir le programme du jour en détail
+          </monButton> 
+        </RouterLink>
     </div>
 </template>
 
@@ -25,6 +30,7 @@
 
 import cardPortrait from "../components/cardPortrait.vue"
 import cardPaysage from "../components/cardPaysage.vue"
+import monButton from "../components/monButton.vue"
 
 export default {
   name: "ProgramArt",
@@ -32,7 +38,7 @@ export default {
     return {
     };
   },
-  components: { cardPortrait, cardPaysage },
+  components: { cardPortrait, cardPaysage, monButton },
   
   props:{
     image:{
