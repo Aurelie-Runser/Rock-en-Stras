@@ -99,17 +99,15 @@
     <div class="bg-pink">
       <section class="max-w-7xl m-auto px-5 pb-10 lg:pb-20 ">
 
-        <h2 class="mb-10">Compte</h2>
+        <h2 class="mb-10">Mon Compte</h2>
 
         <p>Vous avez un compte ? Pensez à vous connecter !</p>
-
-        <div class="">           
-          <RouterLink to="/style-guide" class="mx-auto">
+          
+          <RouterLink to="/compte" class="mx-auto">
             <monButton class="mx-auto px-10 py-5 rounded-r-[5rem] text-2xl">
               Se conncecter
             </monButton>
           </RouterLink>
-        </div>
           
           <RouterLink to="/style-guide" class="mx-auto">
             <monButton>

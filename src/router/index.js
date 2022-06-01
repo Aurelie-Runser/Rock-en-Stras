@@ -3,6 +3,7 @@ import AccueilView from '../views/AccueilView.vue'
 import ProgramView from '../views/ProgramView.vue'
 import ArtistesView from '../views/ArtistesView.vue'
 import ContactView from '../views/ContactView.vue'
+import CompteView from '../views/CompteView.vue'
 
 import ConcertView from '../views/ConcertView.vue'
 import GroupeView from '../views/GroupeView.vue'
@@ -17,6 +18,7 @@ const router = createRouter({
     { path: '/program', name: 'Program', component: ProgramView },
     { path: '/artistes', name: 'Artistes', component: ArtistesView },
     { path: '/contact', name: 'Contact', component: ContactView },
+    { path: '/compte', name: 'Compte', component: CompteView },
 
     { path: '/concert', name: 'Concert', component: ConcertView },
     { path: '/groupe', name: 'Groupe', component: GroupeView },
