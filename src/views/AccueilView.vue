@@ -33,7 +33,7 @@
 
       </section>
 
-      <separateurRose1 class="mt-5 w-screen"/>
+      <separateurRose class="mt-5 w-screen"/>
 
     </div>
 
@@ -90,7 +90,7 @@
 
       </section>
 
-      <separateurRose1 class="mt-5 w-screen"/>
+      <separateurRose class="mt-5 w-screen"/>
 
     </div>
 
@@ -121,7 +121,7 @@ import logoGrand from "../components/icons/logoGrand.vue"
 import cardPaysage from "../components/cardPaysage.vue"
 import cardArtiste from "../components/cardArtiste.vue"
 import monButton from "../components/monButton.vue"
-import separateurRose1 from "../components/icons/separateurRose1.vue"
+import separateurRose from "../components/icons/separateurRose.vue"
 
 export default {
   name: "AccueilView",
@@ -129,6 +129,6 @@ export default {
     return {
     };
   },
-  components: { logoGrand, cardPaysage, cardArtiste, monButton, separateurRose1 },
+  components: { logoGrand, cardPaysage, cardArtiste, monButton, separateurRose },
 }
 </script>
