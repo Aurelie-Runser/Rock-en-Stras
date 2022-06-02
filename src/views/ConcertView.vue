@@ -3,22 +3,28 @@
         <h1 class="mb-12">Concerts du ???</h1>
 
         <!--Scène 1-->
-        <div class="flex flex-col max-w-6xl mx-auto my-20">
+        <div class="max-w-7xl mx-auto my-20">
             <div class="flex flex-wrap justify-between items-center w-full sm:w-[80%] lg:w-full gap-x-5 lg:gap-x-10">
                 <div class="basis-12 flex-grow">
                     <h2>Scène 1</h2>
 
-                    <div class="font-semibold text-base sm:text-lg lg:text-xl leading-10 sm:leading-[4rem] lg:leading-[5rem]"
+                    <div class="my-5 flex gap-5"
                          v-for="h in listeHorraire" :key="h.id">
-                        <p class="text-pink-500">{{h.heure}}</p>
-                        <p class="text-pink-500">{{h.groupe}}</p>
+                       <!-- <p class="text-pink-500">{{h.heure}}</p> -->
+                       <!-- <p class="text-pink-500">{{h.groupe}}</p> -->
 
-                        <input class="h-11 m-0 px-5 py-0 bg-transparent border-transparent 
-                                         font-semibold text-base sm:text-lg lg:text-xl
+                        <input class="h-11 w-60 m-0 px-5 py-0 bg-transparent border-transparent 
+                                        text-base lg:text-lg font-base font-semibold text-pink-500
                                          motion-safe:transition motion-safe:duration-300
                                         hover:border-white
-                                        focus:bg-gray-700" type='time' v-model='h.heure' />
+                                        focus:bg-gray-700 focus:text-gray-100" type='time' v-model='h.heure' />
 
+                        <input class="h-11 m-0 px-5 py-0 bg-transparent border-transparent 
+                                        text-base lg:text-lg font-base font-semibold text-pink-500
+                                         motion-safe:transition motion-safe:duration-300
+                                        hover:border-white
+                                        focus:bg-gray-700 focus:text-gray-100" type='text' v-model='h.groupe' />
+                        
                         
                             <updateButton @click.prevent="updateHorraire(h)"/>
 
@@ -31,7 +37,7 @@
 
             </div>
 
-            <RouterLink to="/artistes" class="flex-none flex justify-center w-full">
+            <RouterLink to="/artistes" class="block w-max mx-auto">
                 <monButton>
                     Découvrir tous les Artistes
                 </monButton>
@@ -56,7 +62,7 @@
 
             </div>
 
-            <RouterLink to="/artistes" class="flex-none flex justify-center w-full">
+            <RouterLink to="/artistes" class="flex-none flex justify-center">
                 <monButton>
                     Découvrir tous les Artistes
                 </monButton>
@@ -122,7 +128,7 @@ export default {
             })
         },
 
-        async deleteHorraire(j){
+        async deleteHorraire(h){
             const firestore = getFirestore();
             const docRef = doc(firestore, "horraire", h.id);
             await deleteDoc(docRef);

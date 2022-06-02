@@ -15,7 +15,7 @@
             </ul>           
         </div>
 
-        <RouterLink to="/concert" class="flex-none flex justify-center w-full">
+        <RouterLink to="/concert">
         <monButton>
             Voir le programme du jour en détail
         </monButton> 
