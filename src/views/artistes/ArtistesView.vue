@@ -27,7 +27,7 @@
 
 
 <script>
-import cardArtiste from "../components/cardArtiste.vue"
+import cardArtiste from "../../components/cardArtiste.vue"
 
 import { 
     getFirestore,   // Obtenir le Firestore
