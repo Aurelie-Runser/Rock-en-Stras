@@ -10,33 +10,31 @@
             <div class="mx-auto my-16 max-w-6xl">
                 <h3>La programmation</h3>
 
-                <programArt class="flex-row"
-                    image="/vendredi.jpg"
-                    jour="Vendredi 15"
-                    artiste1="Salut c'est cool"
-                    artiste2="Ultra Vomit"
-                    artiste3="Les Bidochons"
-                    artiste4="Les Fatals Picards"
-                    artiste5="Elmer Food Beat"/>
+                <div v-for="j in listeJour" :key="j.id"
+                    class="mx-auto my-16 w-full xs:w-[80%] lg:w-full flex flex-wrap flex-row gap-x-10 justify-center items-center">
+        
+                    <card image="/samedi.jpg" alt="photo"/>
 
-                <programArt class="flex-row-reverse"
-                    image="/samedi.jpg"
-                    jour="Samedi 16"
-                    artiste1="Ultra Vomit"
-                    artiste2="Les Fatals Picards"
-                    artiste3="Elmer Food Beat"
-                    artiste4="Flagrants Délires"
-                    artiste5="Fills Monkey"/>
+                    <div class="text-white font-base mx-auto">
+                        <h4 class="font-semibold text-base lg:text-lg mx-5 mb-5 sm:mx-10">{{j.jour}}</h4>
+                                    
+                        <ul class="font-semibold text-base sm:text-lg lg:text-xl leading-10 sm:leading-[4rem] lg:leading-[5rem] nth-child-2n:text-pink">
+                            <li>{{j.artiste_1}}</li>
+                            <li>{{j.artiste_2}}</li>
+                            <li>{{j.artiste_3}}</li>
+                            <li>{{j.artiste_4}}</li>
+                            <li>{{j.artiste_5}}</li>
+                        </ul>           
+                    </div>
 
-                <programArt class="flex-row"
-                    image="/dimanche.jpg"
-                    jour="Dimanche 17"
-                    artiste1="Les Fatals Picards"
-                    artiste2="Flagrants Délires"
-                    artiste3="Fills Monkey"
-                    artiste4="Sebkha-Chott"
-                    artiste5="Ministère Magouille"/>
-            </div>
+                    <RouterLink to="/concert" class="flex-none flex justify-center w-full">
+                    <monButton>
+                        Voir le programme du jour en détail
+                    </monButton> 
+                    </RouterLink>
+                </div>
+
+                </div>
 
             <div>
                 <p>Pour avoir plus d’information, n’hésitez pas à aller jeter un œil à la page des artistes !</p>
@@ -54,7 +52,7 @@
 
 
 <script>
-import programArt from "../components/programArt.vue"
+import card from "../components/cardBase.vue"
 import monButton from "../components/monButton.vue"
 
 import { 
@@ -73,14 +71,15 @@ import {
 
 export default {
   name: "ProgramView",
-  components: { programArt, monButton },
+  components: { card, monButton },
 
   data() {
     return {
+        libelle : null,
         listeJour : []
     };
   },
-/*
+
   mounted(){
       // appel liste jour
       this.getJour();
@@ -92,9 +91,9 @@ export default {
         const dbJour = collection(firestore, "jour");
         const query = await onSnapshot(dbJour, (snapshot) =>{
             this.listeJour = snapshot.docs.map(doc => ({id:doc.id, ...doc.data()}))
-        console.log("jour : ", this.listeJour)
+        console.log(this.listeJour)
         })
       },
-  }*/
+  },
 }
 </script>
