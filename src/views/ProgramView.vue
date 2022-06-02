@@ -10,71 +10,33 @@
             <div class="mx-auto my-16 max-w-6xl">
                 <h3>La programmation</h3>
 
-                <div v-for="j in listeJour" :key="j.id"
-                    class="mx-auto my-16 w-full xs:w-[80%] lg:w-full flex flex-wrap flex-row gap-x-10 justify-center items-center">
-        
-                    <card class="md:aspect-[13/16] lg:aspect-video" image="/samedi.jpg" alt="photo"/>
+                <programArt class="flex-row"
+                    img="/vendredi.jpg"
+                    jour="Vendredi 15"
+                    artiste1="Les Fatals Picards"
+                    artiste2="Ultra Vomit"
+                    artiste3="Les Bidochons"
+                    artiste4="Elmer Food Beat"
+                    artiste5="Salut C'est Cool"/>
 
-                    <div class="text-white font-base mx-auto ">
-                        <h4 class="font-semibold text-base lg:text-lg mx-5 mb-5 sm:mx-10">{{j.jour}}</h4>
-                                    
-                        <div class="flex flex-col gap-y-[3vw]
-                                    font-semibold text-base sm:text-lg leading-10 sm:leading-[4rem] lg:leading-[5rem] nth-child-2n:text-pink
-                                    focus:nth-child-2n:text-gray-900">
-                          
-                            <!--<li>{{j.artiste_1}}</li>-->
+                <programArt class="flex-row-reverse"
+                    img="/samedi.jpg"
+                    jour="Samedi 16"
+                    artiste1="Ultra Vomit"
+                    artiste2="Les Fatals Picards"
+                    artiste3="Elmer Food Beat"
+                    artiste4="Flagrants Délires"
+                    artiste5="Fills Monkey"/>
 
-                            <input class="h-11 m-0 px-5 py-0 bg-transparent border-transparent 
-                                          font-semibold text-base sm:text-lg lg:text-xl
-                                          motion-safe:transition motion-safe:duration-300
-                                        hover:border-white
-                                        focus:bg-gray-700" type='text' v-model='j.artiste_1' />
-
-                            <!--<li>{{j.artiste_2}}</li>-->
-
-                            <input class="h-11 m-0 px-5 py-0 bg-transparent border-transparent 
-                                         font-semibold text-base sm:text-lg lg:text-xl
-                                         motion-safe:transition motion-safe:duration-300
-                                        hover:border-white
-                                        focus:bg-gray-700" type='text' v-model='j.artiste_2' />
-
-                            <!--<li>{{j.artiste_3}}</li>-->
-
-                            <input class="h-11 m-0 px-5 py-0 bg-transparent border-transparent 
-                                         font-semibold text-base sm:text-lg lg:text-xl
-                                         motion-safe:transition motion-safe:duration-300
-                                        hover:border-white
-                                        focus:bg-gray-700" type='text' v-model='j.artiste_3' />
-
-                            <!--<li>{{j.artiste_4}}</li>-->
-
-                            <input class="h-11 m-0 px-5 py-0 bg-transparent border-transparent 
-                                         font-semibold text-base sm:text-lg lg:text-xl
-                                         motion-safe:transition motion-safe:duration-300
-                                        hover:border-white
-                                        focus:bg-gray-700" type='text' v-model='j.artiste_4' />
-
-                            <!--<li>{{j.artiste_5}}</li>-->
-
-                            <input class="h-11 m-0 px-5 py-0 bg-transparent border-transparent 
-                                         font-semibold text-base sm:text-lg lg:text-xl
-                                         motion-safe:transition motion-safe:duration-300
-                                        hover:border-white
-                                        focus:bg-gray-700" type='text' v-model='j.artiste_5' />
-
-                            <updateButton @click.prevent="updateJour(j)"/>
-
-                        </div>           
-                    </div>
-
-                    <RouterLink to="/concert" class="flex-none flex justify-center w-full">
-                    <monButton>
-                        Voir le programme du jour en détail
-                    </monButton> 
-                    </RouterLink>
-                </div>
-
-                </div>
+                <programArt class="flex-row"
+                    img="/dimanche.jpg"
+                    jour="Dimanche 17"
+                    artiste1="Les Fatals Picards"
+                    artiste2="Flagrants Délires"
+                    artiste3="Fills Monkey"
+                    artiste4="Sebkha-Chott"
+                    artiste5="Ministère Magouille"/>
+            </div>
 
             <div>
                 <p>Pour avoir plus d’information, n’hésitez pas à aller jeter un œil à la page des artistes !</p>
@@ -92,9 +54,8 @@
 
 
 <script>
-import card from "../components/cardBase.vue"
+import programArt from "../components/programArt.vue"
 import monButton from "../components/monButton.vue"
-import updateButton from "../components/icons/updateButton.vue"
 
 import { 
     getFirestore,   // Obtenir le Firestore
@@ -112,10 +73,11 @@ import {
 
 export default {
   name: "ProgramView",
-  components: { card, monButton, updateButton },
+  components: { programArt, monButton },
 
   data() {
     return {
+        libelle : null,
         listeJour : []
     };
   },
@@ -131,20 +93,9 @@ export default {
         const dbJour = collection(firestore, "jour");
         const query = await onSnapshot(dbJour, (snapshot) =>{
             this.listeJour = snapshot.docs.map(doc => ({id:doc.id, ...doc.data()}))
+        console.log(this.listeJour)
         })
       },
-
-      async updateJour(j){
-            const firestore = getFirestore();
-            const docRef = doc(firestore, "jour", j.id);
-            await updateDoc(docRef, {
-                artiste_1: j.artiste_1,
-                artiste_2: j.artiste_2,
-                artiste_3: j.artiste_3,
-                artiste_4: j.artiste_4,
-                artiste_5: j.artiste_5,
-            })
-        },
   },
 }
 </script>
