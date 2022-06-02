@@ -87,14 +87,6 @@
                         <card image="/paysage.jpg"/>
                         <cardArtiste image="/groupe.jpg"/>
                         <infoArtiste/>
-                        <programArt image="/paysage.jpg"
-                                    jour="Jour"
-                                    artiste1="Artiste 1"
-                                    artiste2="Artiste 2"
-                                    artiste3="Artiste 3"
-                                    artiste4="Artiste 4"
-                                    artiste5="Artiste 5"
-                                class="border border-gray-300 "/>
                     </div>
             </section>
         </div>
@@ -116,7 +108,6 @@ import monButton from "../components/monButton.vue"
 import card from "../components/cardBase.vue"
 import cardArtiste from "../components/cardArtiste.vue"
 import infoArtiste from "../components/infoArtiste.vue"
-import programArt from "../components/programArt.vue"
 
 export default {
   name: "AccueilView",
@@ -125,6 +116,6 @@ export default {
     };
   },
   components: { logoGrand, logoPetit, menuFerme, menuOuvert, separateurRose, facebookIcon, instaIcon, twitterIcon, youtubeIcon,
-                monButton, card, cardArtiste, infoArtiste, programArt },
+                monButton, card, cardArtiste, infoArtiste, },
 }
 </script>
