@@ -39,14 +39,17 @@
                             class="hover:text-gray-900 focus:text-gray-900">Artistes</RouterLink></li>
                     <li><RouterLink to="/contact" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert"
                             class="hover:text-gray-900 focus:text-gray-900">Contact</RouterLink></li>
+                    <li><RouterLink to="/compte" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert"
+                            class="hover:text-gray-900 focus:text-gray-900">Compte</RouterLink></li>
                 </ul>
             </div>
 
             <!-- Menu ordi -->
-            <ul class="hidden my-2 flex-auto justify-end font-h3 text-xl gap-20 text-white md:flex">
+            <ul class="hidden my-2 ml-12 max-w-3xl flex-auto justify-between font-h3 text-[1.75rem] lg:text-xl text-white md:flex">
                 <li><RouterLink to="/program" class="hover:text-gray-900 focus:text-gray-900">Programmation</RouterLink></li>
                 <li><RouterLink to="/artistes" class="hover:text-gray-900 focus:text-gray-900">Artistes</RouterLink></li>
                 <li><RouterLink to="/contact" class="hover:text-gray-900 focus:text-gray-900">Contact</RouterLink></li>
+                <li><RouterLink to="/compte" class="hover:text-gray-900 focus:text-gray-900">Compte</RouterLink></li>
             </ul>
         </nav>
 </template>
