@@ -1,13 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
-
-// fonction firestore
-import{
-  getFirestore,
-  collection,
-  onSnapshot,
-  query,
-  where
-} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js"
+import { createRouter, createWebHistory } from 'vue-router';
 
 
 import AccueilView from '../views/AccueilView.vue'
@@ -35,8 +26,8 @@ const router = createRouter({
     { path: '/concert',           name: 'Concert',          component: ConcertView },
     { path: '/groupe',            name: 'Groupe',           component: GroupeView },
 
-    { path: '/artistes',           name: 'Artistes',        component: ArtistesVies },
-    { path: '/updateArtistes/:id', name: 'UpdateArtistes',  component: UpdateArtistes  },
+    { path: '/artistes',           name: 'Artistes',        component: ArtistesView },
+    { path: '/updateArtistes', name: 'UpdateArtistes',  component: UpdateArtistes  },
 
     { path: '/style-guide',        name: 'style-guide',     component: styleGuide },
     { path: '/:pathMatch(.*)*',    name: 'Page404',         component: Page404 },
