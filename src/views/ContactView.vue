@@ -70,7 +70,8 @@
                 <p class="flex-none w-full text-sm">* champs obligatoires</p>
 
                 <div class="mx-auto max-w-lg">
-                    <input class="mt-12 px-10 py-5 bg-pink-300_90 border-t-none border-pink-800 rounded-3xl text-xl font-button text-white
+                    <input class="mt-12 px-10 py-5 bg-pink-300_90 border-pink-800 rounded-3xl text-xl font-button text-white
+                                motion-safe:transition motion-safe:duration-300
                                 hover:bg-black hover:border-gray-300
                                 focus:bg-black focus:border-gray-300"
                         type="submit" 
