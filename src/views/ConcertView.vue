@@ -5,26 +5,29 @@
         <!--Scène 1-->
         <div class="max-w-7xl mx-auto my-20 mb-40">
             <div class="flex flex-wrap justify-between items-center w-full gap-x-5 lg:gap-x-10">
-                <div class="basis-12 flex-grow">
+                <div>
                     <h2>Scène 1</h2>
 
-                    <div class="my-5 flex flex-wrap gap-5 w-auto items-center"
+                    <div class="my-5 flex flex-wrap gap-5 items-center"
                          v-for="h in listeHorraire" :key="h.id">
                        <!-- <p class="text-pink-500">{{h.heure}}</p> -->
                        <!-- <p class="text-pink-500">{{h.groupe}}</p> -->
 
+                        <!--listes avec maj et sup-->
                         <div class="flex flex-wrap gap-5 items-center">
                             <input class="h-11 w-auto m-0 px-5 py-0 bg-transparent border-transparent 
                                             text-base sm:text-lg font-base font-semibold text-pink-500
                                             motion-safe:transition motion-safe:duration-300
                                             hover:border-white
-                                            focus:bg-gray-700 focus:text-gray-100" type='time' v-model='h.heure' />
+                                            focus:bg-gray-700 focus:text-gray-100" 
+                                    type='time' v-model='h.heure' />
 
                             <input class="h-11 w-auto m-0 px-5 py-0 bg-transparent border-transparent 
                                             text-base sm:text-lg font-base font-semibold text-pink-500
                                             motion-safe:transition motion-safe:duration-300
                                             hover:border-white
-                                            focus:bg-gray-700 focus:text-gray-100" type='text' v-model='h.groupe' />
+                                            focus:bg-gray-700 focus:text-gray-100" 
+                                    type='text' v-model='h.groupe' />
                         </div>
 
                         <div class="flex gap-5 mx-auto">
@@ -33,6 +36,30 @@
                             <deleteButton @click.prevent="deleteHorraire(h)"/>
                         </div>
                     </div>
+
+                    <!--creation des listes-->
+                    <div class="my-7">
+                        <p class="text-lg">Ajouter un Concert</p>
+
+                        <div class="my-5 flex flex-wrap gap-5 items-center">
+
+                            <div>
+                            <p>Heure </p>
+                            <input class="w-max hover:border-pink-500 focus:bg-pink-300_90"
+                                    type="time" v-model="heure" required/>
+                            </div>
+                            
+                            <div>
+                            <p>Groupe </p>
+                            <input class="w-64 hover:border-pink-500 focus:bg-pink-300_90"
+                                    type="text" v-model="groupe" required/>
+                            </div>
+
+                            <downloadButton class="flex-none" @click="createHorraire()"/>                            
+                        </div>
+                    </div>
+
+
                 </div>
 
                 <card class="mx-auto md:aspect-[13/16] lg:aspect-video" image="/scene1.jpg" imgalt="photo de la scène 1"/>
@@ -77,6 +104,7 @@
 import monButton from "../components/monButton.vue"
 import card from "../components/cardBase.vue"
 
+import downloadButton from "../components/icons/downloadButton.vue"
 import updateButton from "../components/icons/updateButton.vue"
 import deleteButton from "../components/icons/deleteButton.vue"
 
@@ -98,7 +126,7 @@ import {
 
 export default {
   name: "ConcertView",
-  components: { monButton, card, updateButton, deleteButton},
+  components: { monButton, card, downloadButton, updateButton, deleteButton},
 
   data() {
     return {
@@ -128,6 +156,15 @@ export default {
             const dbHorraire = collection(firestore, "horraire");
             const query = await onSnapshot(dbHorraire, (snapshot) =>{
                 this.listeHorraire = snapshot.docs.map(doc => ({id:doc.id, ...doc.data()}))
+            })
+        },
+
+        async createHorraire(){
+            const firestore = getFirestore();
+            const dbHorraire = collection(firestore, "horraire");
+            const docRef = await addDoc(dbHorraire, {
+                heure: this.heure,
+                groupe: this.groupe
             })
         },
 
