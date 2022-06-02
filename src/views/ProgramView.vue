@@ -15,7 +15,7 @@
         
                     <card class="md:aspect-[13/16] lg:aspect-video" image="/samedi.jpg" alt="photo"/>
 
-                    <div class="text-white font-base mx-auto">
+                    <div class="text-white font-base mx-auto ">
                         <h4 class="font-semibold text-base lg:text-lg mx-5 mb-5 sm:mx-10">{{j.jour}}</h4>
                                     
                         <div class="flex flex-col gap-y-[3vw]
@@ -62,9 +62,7 @@
                                         hover:border-white
                                         focus:bg-gray-700" type='text' v-model='j.artiste_5' />
 
-                            <monButton class='' @click.prevent="updateJour(j)">
-                                <p>Modif</p>
-                            </monButton>
+                            <updateButton @click.prevent="updateJour(j)"/>
 
                         </div>           
                     </div>
@@ -96,6 +94,7 @@
 <script>
 import card from "../components/cardBase.vue"
 import monButton from "../components/monButton.vue"
+import updateButton from "../components/icons/updateButton.vue"
 
 import { 
     getFirestore,   // Obtenir le Firestore
@@ -113,7 +112,7 @@ import {
 
 export default {
   name: "ProgramView",
-  components: { card, monButton },
+  components: { card, monButton, updateButton },
 
   data() {
     return {
