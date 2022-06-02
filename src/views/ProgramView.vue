@@ -13,18 +13,60 @@
                 <div v-for="j in listeJour" :key="j.id"
                     class="mx-auto my-16 w-full xs:w-[80%] lg:w-full flex flex-wrap flex-row gap-x-10 justify-center items-center">
         
-                    <card image="/samedi.jpg" alt="photo"/>
+                    <card class="md:aspect-[13/16] lg:aspect-video" image="/samedi.jpg" alt="photo"/>
 
                     <div class="text-white font-base mx-auto">
                         <h4 class="font-semibold text-base lg:text-lg mx-5 mb-5 sm:mx-10">{{j.jour}}</h4>
                                     
-                        <ul class="font-semibold text-base sm:text-lg lg:text-xl leading-10 sm:leading-[4rem] lg:leading-[5rem] nth-child-2n:text-pink">
-                            <li>{{j.artiste_1}}</li>
-                            <li>{{j.artiste_2}}</li>
-                            <li>{{j.artiste_3}}</li>
-                            <li>{{j.artiste_4}}</li>
-                            <li>{{j.artiste_5}}</li>
-                        </ul>           
+                        <div class="flex flex-col gap-y-[3vw]
+                                    font-semibold text-base sm:text-lg leading-10 sm:leading-[4rem] lg:leading-[5rem] nth-child-2n:text-pink
+                                    focus:nth-child-2n:text-gray-900">
+                          
+                            <!--<li>{{j.artiste_1}}</li>-->
+
+                            <input class="h-11 m-0 px-5 py-0 bg-transparent border-transparent 
+                                          font-semibold text-base sm:text-lg lg:text-xl
+                                          motion-safe:transition motion-safe:duration-300
+                                        hover:border-white
+                                        focus:bg-gray-700" type='text' v-model='j.artiste_1' />
+
+                            <!--<li>{{j.artiste_2}}</li>-->
+
+                            <input class="h-11 m-0 px-5 py-0 bg-transparent border-transparent 
+                                         font-semibold text-base sm:text-lg lg:text-xl
+                                         motion-safe:transition motion-safe:duration-300
+                                        hover:border-white
+                                        focus:bg-gray-700" type='text' v-model='j.artiste_2' />
+
+                            <!--<li>{{j.artiste_3}}</li>-->
+
+                            <input class="h-11 m-0 px-5 py-0 bg-transparent border-transparent 
+                                         font-semibold text-base sm:text-lg lg:text-xl
+                                         motion-safe:transition motion-safe:duration-300
+                                        hover:border-white
+                                        focus:bg-gray-700" type='text' v-model='j.artiste_3' />
+
+                            <!--<li>{{j.artiste_4}}</li>-->
+
+                            <input class="h-11 m-0 px-5 py-0 bg-transparent border-transparent 
+                                         font-semibold text-base sm:text-lg lg:text-xl
+                                         motion-safe:transition motion-safe:duration-300
+                                        hover:border-white
+                                        focus:bg-gray-700" type='text' v-model='j.artiste_4' />
+
+                            <!--<li>{{j.artiste_5}}</li>-->
+
+                            <input class="h-11 m-0 px-5 py-0 bg-transparent border-transparent 
+                                         font-semibold text-base sm:text-lg lg:text-xl
+                                         motion-safe:transition motion-safe:duration-300
+                                        hover:border-white
+                                        focus:bg-gray-700" type='text' v-model='j.artiste_5' />
+
+                            <monButton class='' @click.prevent="updateJour(j)">
+                                <p>Modif</p>
+                            </monButton>
+
+                        </div>           
                     </div>
 
                     <RouterLink to="/concert" class="flex-none flex justify-center w-full">
@@ -75,7 +117,6 @@ export default {
 
   data() {
     return {
-        libelle : null,
         listeJour : []
     };
   },
@@ -91,9 +132,20 @@ export default {
         const dbJour = collection(firestore, "jour");
         const query = await onSnapshot(dbJour, (snapshot) =>{
             this.listeJour = snapshot.docs.map(doc => ({id:doc.id, ...doc.data()}))
-        console.log(this.listeJour)
         })
       },
+
+      async updateJour(j){
+            const firestore = getFirestore();
+            const docRef = doc(firestore, "jour", j.id);
+            await updateDoc(docRef, {
+                artiste_1: j.artiste_1,
+                artiste_2: j.artiste_2,
+                artiste_3: j.artiste_3,
+                artiste_4: j.artiste_4,
+                artiste_5: j.artiste_5,
+            })
+        },
   },
 }
 </script>
