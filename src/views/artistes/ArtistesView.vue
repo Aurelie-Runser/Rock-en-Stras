@@ -23,6 +23,10 @@
 
                     </div>
 
+                    <RouterLink to="/createArtistes">
+                      <monButton>Ajouter un groupe</monButton>
+                    </RouterLink>
+
                 </div>
             </div>
         
@@ -33,6 +37,7 @@
 
 <script>
 import cardArtiste from "../../components/cardArtiste.vue"
+import monButton from "../../components/monButton.vue"
 
 import downloadButton from "../../components/icons/downloadButton.vue"
 import updateButton from "../../components/icons/updateButtonWhite.vue"
@@ -60,7 +65,8 @@ import {
 
 export default {
   name: "ArtistesView",
-  components: { cardArtiste, downloadButton, updateButton, deleteButton },
+  components: { cardArtiste, monButton,
+                downloadButton, updateButton, deleteButton },
 
   data() {
     return {
