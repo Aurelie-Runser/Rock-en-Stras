@@ -60,7 +60,6 @@ import{
     signOut
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js"
 
-
 export default {
   name: "ArtistesView",
   components: { backButton },
@@ -88,23 +87,18 @@ export default {
             signInWithEmailAndPassword(getAuth(), this.user.email, this.user.password)
             .then((response) =>{
                 this.user = response.user;
-                console.log("user", this.user);
-                //mise a jour du message
                 this.message = "Vous êtes connecté : "+this.user.email;
             })
             .catch((error) =>{
-                console.log("errur connexion", error);
+                console.log("erreur de connexion", error);
                 this.message = "erreur d'authentification";
             })
         },
 
         onDcnx(){
-            //se déconnecter
             signOut(getAuth())
             .then(response =>{
-                //mise a jour du message
-                this.message = "user non concté";
-                //ré initialisation des champs
+                this.message = "Vous n'êtes pas connecté";
                 this.user = {
                     email: null,
                     password: null,
