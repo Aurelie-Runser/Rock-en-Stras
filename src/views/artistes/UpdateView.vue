@@ -5,7 +5,7 @@
 
             <form class="mx-auto max-w-4xl flex flex-wrap justify-center gap-x-20"
                   enctype="multipart/form-data" 
-                  @submit.prevent="createGroupe">
+                  @submit.prevent="updateGroupe">
 
                     <div class="grid grids-cols-1 place-items-center w-96 aspect-square border-gray-100 border-2 overflow-hidden">
                         <img class="max-h-full max-w-full" :src="imgData" alt="photo que vous avez rentré"/>
@@ -23,7 +23,7 @@
 
                         <div class="flex gap-x-10">   
                             <backButton type="submit">
-                                Créer
+                                Modifier
                             </backButton>
                             <backButton class="">
                                 <RouterLink to="/artistes">Abandonner</RouterLink>

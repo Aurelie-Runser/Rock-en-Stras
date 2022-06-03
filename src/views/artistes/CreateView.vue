@@ -86,7 +86,7 @@ export default {
 
     methods :{
 
-    async getGroupe() {
+      async getGroupe() {
       const firestore = getFirestore();
       const dbGroupe = collection(firestore, "groupe");
       const query = await onSnapshot(dbGroupe, (snapshot) => {
@@ -108,8 +108,8 @@ export default {
               console.log("erreur downloadUrl", error);
             });
         });
-        console.log("listeGroupe", this.listeGroupe);
-      });
+            console.log("listeGroupe", this.listeGroupe);
+            });
         },
 
         previewImage: function(event) {
