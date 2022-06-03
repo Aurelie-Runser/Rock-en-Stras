@@ -10,7 +10,7 @@ import ConcertView from '../views/ConcertView.vue'
 import GroupeView from '../views/GroupeView.vue'
 
 import ArtistesView from '../views/artistes/ArtistesView.vue'
-import UpdateArtistes from '../views/artistes/UpdateView.vue'
+import CreateArtistes from '../views/artistes/CreateView.vue'
 
 import styleGuide from '../views/style-guide.vue'
 import Page404 from '../views/404.vue'
@@ -27,7 +27,7 @@ const router = createRouter({
     { path: '/groupe',            name: 'Groupe',           component: GroupeView },
 
     { path: '/artistes',           name: 'Artistes',        component: ArtistesView },
-    { path: '/updateArtistes', name: 'UpdateArtistes',  component: UpdateArtistes  },
+    { path: '/createArtistes',     name: 'CreateArtistes',  component: CreateArtistes  },
 
     { path: '/style-guide',        name: 'style-guide',     component: styleGuide },
     { path: '/:pathMatch(.*)*',    name: 'Page404',         component: Page404 },

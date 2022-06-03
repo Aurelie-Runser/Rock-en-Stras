@@ -11,10 +11,6 @@
         @apply bg-gray-900;
     };
 
-    .bg-back{
-        @apply bg-pink-300;
-    };
-
     .text-pink{
         @apply text-pink-500;
     };
