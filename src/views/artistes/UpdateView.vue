@@ -23,12 +23,12 @@
                 </div>
 
                 <div>   
-                    <monButton type="submit">
+                    <backButton type="submit">
                         Modifier
-                    </monButton>
-                    <monButton class="">
+                    </backButton>
+                    <backButton class="">
                         <RouterLink to="/artistes">Abandonner</RouterLink>
-                    </monButton>
+                    </backButton>
                 </div>
             </form>
         
@@ -38,7 +38,7 @@
 
 
 <script>
-import monButton from "../../components/monButton.vue"
+import backButton from "../../components/backButton.vue"
 
 import { 
     getFirestore, 
@@ -67,7 +67,7 @@ import {
 
 export default {
     name:'UpdateView',
-    components:{ monButton },
+    components:{ backButton },
 
     data() {
         return {

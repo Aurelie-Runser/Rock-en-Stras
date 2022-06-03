@@ -30,22 +30,31 @@
                     Vous n'etes pas connecter
                 </div>
             
-                    <button type="submit"
-                        class="mt-12 px-7 sm:px-10 py-5 bg-pink-300_90 border-4 border-pink-800 rounded-3xl text-lg sm:text-xl text-white font-button
-                                motion-safe:transition motion-safe:duration-300 
-                                hover:bg-black hover:border-gray-300
-                                focus:bg-black focus:border-gray-300">
+                    <backButton type="submit"
+                        class="mt-12 sm:text-xl">
                         Connexion
-                    </button>
+                    </backButton>
 
-                    <button type="button"
-                        class="mt-12 px-7 sm:px-10 py-5 bg-pink-300_90 border-4 border-pink-800 rounded-3xl text-lg sm:text-xl text-white font-button
-                                motion-safe:transition motion-safe:duration-300 
-                                hover:bg-black hover:border-gray-300
-                                focus:bg-black focus:border-gray-300">
+                    <backButton type="button"
+                        class="mt-12 sm:text-xl">
                         Deconnexion
-                    </button>
+                    </backButton>
             </form>
         </div>
     </div>
 </template>
+
+<script>
+import backButton from "../components/backButton.vue"
+
+export default {
+  name: "ArtistesView",
+  components: { backButton },
+
+  data() {
+    return {
+
+    };
+  },
+}
+</script>

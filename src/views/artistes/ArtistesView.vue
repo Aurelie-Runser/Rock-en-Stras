@@ -7,10 +7,9 @@
 
               <div class="my-20 mx-full flex justify-center">
                 <RouterLink to="/createArtistes">
-                  <button class="px-7 sm:px-10 py-5 bg-pink-300_90 border-4 border-pink-800 rounded-3xl text-lg text-white font-button
-                                motion-safe:transition motion-safe:duration-300 
-                                hover:bg-black hover:border-gray-300
-                                focus:bg-black focus:border-gray-300">Ajouter un groupe</button>
+                  <backButton>
+                    Ajouter un groupe
+                  </backButton>
                 </RouterLink>
               </div>
 
@@ -48,6 +47,7 @@
 <script>
 import cardArtiste from "../../components/cardArtiste.vue"
 import monButton from "../../components/monButton.vue"
+import backButton from "../../components/backButton.vue"
 
 import downloadButton from "../../components/icons/downloadButton.vue"
 import updateButton from "../../components/icons/updateButtonWhite.vue"
@@ -75,7 +75,7 @@ import {
 
 export default {
   name: "ArtistesView",
-  components: { cardArtiste, monButton,
+  components: { cardArtiste, monButton, backButton,
                 downloadButton, updateButton, deleteButton },
 
   data() {

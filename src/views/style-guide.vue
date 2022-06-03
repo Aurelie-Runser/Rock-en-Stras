@@ -83,7 +83,8 @@
                 
                     <div class="p-5 flex flex-wrap items-center justify-around gap-10 bg-gray-900">
                
-                        <monButton>Mon Bouton </monButton>
+                        <monButton>Mon Bouton</monButton>
+                        <backButton>Bouton pour tout ce qui est "Back"</backButton>
                         <card image="/paysage.jpg"/>
                         <cardArtiste image="/groupe.jpg"/>
                         <infoArtiste/>
@@ -105,6 +106,7 @@ import twitterIcon from "../components/icons/twitter.vue"
 import youtubeIcon from "../components/icons/youtubeIcon.vue"
 
 import monButton from "../components/monButton.vue"
+import backButton from "../components/backButton.vue"
 import card from "../components/cardBase.vue"
 import cardArtiste from "../components/cardArtiste.vue"
 import infoArtiste from "../components/infoArtiste.vue"
@@ -116,6 +118,6 @@ export default {
     };
   },
   components: { logoGrand, logoPetit, menuFerme, menuOuvert, separateurRose, facebookIcon, instaIcon, twitterIcon, youtubeIcon,
-                monButton, card, cardArtiste, infoArtiste, },
+                monButton, backButton, card, cardArtiste, infoArtiste, },
 }
 </script>
