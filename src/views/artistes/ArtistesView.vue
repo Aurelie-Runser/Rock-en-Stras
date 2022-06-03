@@ -10,14 +10,14 @@
                     <div v-for="g in listeGroupe" :key="g.id">
                       <RouterLink to="/groupe">
                           <div class="relative overflow-hidden w-full aspect-video border-4 border-gray-300 skew-y-3">
-                              <img class="-mt-7 w-full h-[130%] object-cover center -skew-y-3" :src="g.image" alt="imgalt">
+                              <img class="-mt-7 w-full h-[130%] object-cover center -skew-y-3" :src="g.image" alt="photo du groupe">
                               <div class="absolute z-10 top-0 bottom-0 right-0 left-0 flex justify-center items-center text-center bg-gray-700_50">
                                   <h3>{{g.nom}}</h3>
                               </div>
                           </div>
                       </RouterLink>
 
-                      <RouterLink to="/updateArtistes">
+                      <RouterLink :to="{ name:'UpdateArtistes', params: { id: g.id }}">
                         <updateButton/>
                       </RouterLink>
 

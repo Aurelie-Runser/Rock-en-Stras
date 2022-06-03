@@ -1,11 +1,11 @@
 <template>
     <div class="bg-pink px-5 py-36 ">
         <div class="m-auto max-w-7xl">
-            <h1 class="mb-12">Ajout d'un groupe</h1>
+            <h1 class="mb-12">Mise à jour d'un groupe</h1>
 
             <form class="mx-5"
                   enctype="multipart/form-data" 
-                  @submit.prevent="createGroupe">
+                  @submit.prevent="updateGroupe">
 
                 <div>
                     <img class="preview img-fluid" :src="imgData"/>
@@ -24,7 +24,7 @@
 
                 <div>   
                     <monButton type="submit">
-                        Créer
+                        Modifier
                     </monButton>
                     <monButton class="">
                         <RouterLink to="/artistes">Abandonner</RouterLink>
@@ -75,46 +75,50 @@ export default {
             groupe:{
                 nom: null,
                 image: null,
-            }
+            },
+
+            refGroupe:null,
+            imgModifie:false,
+            imgActuelle:null 
         }
     },
 
     mounted(){
-        this.getGroupe()
+        this.getGroupe(this.$route.params.id)
     },
 
     methods :{
 
-        async getGroupe() {
-      const firestore = getFirestore();
-      const dbGroupe = collection(firestore, "groupe");
-      const query = await onSnapshot(dbGroupe, (snapshot) => {
-          console.log("query", query);
-        this.listeGroupe = snapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
+         async getGroupe(id){
+            const firestore = getFirestore();
+            const docRef = doc(firestore, "groupe", id);
+            this.refGroupe = await getDoc(docRef);
+            if(this.refGroupe.exists()){
+                this.groupe = this.refGroupe.data();
+                this.imgtActuelle = this.groupe.image;
+                            console.log("image", this.imgActuelle)
 
-        this.listeGroupe.forEach(function (groupe) {
-          const storage = getStorage();
-          const spaceRef = ref(storage, "groupe/" + groupe.image);
-          getDownloadURL(spaceRef)
-            .then((url) => {
-              groupe.image = url;
-              console.log("groupe", groupe);
+            }
+            else{
+                this.console.log("Groupe inexistant");
+            }
+            const storage = getStorage();
+            const spaceRef = ref(storage, 'groupe/'+this.groupe.image);
+            getDownloadURL(spaceRef)
+                .then((url) => {
+                    this.imgData = url;
             })
-            .catch((error) => {
-              console.log("erreur downloadUrl", error);
-            });
-        });
-        console.log("listeGroupe", this.listeGroupe);
-      });
-    },
+            .catch((error) =>{
+                console.log('erreur downloadUrl', error);
+            })
+        },
 
         previewImage: function(event) {
             this.file = this.$refs.file.files[0];
             // Récupérer le nom du fichier pour la photo du participant
             this.groupe.image = this.file.name;
+            // Si cette fonction s'exécute, c'est que l'image est modifiée 
+            this.imgModifie = true;
             // Reference du fichier à prévisualiser
             var input = event.target;
             // On s'assure que l'on a au moins un fichier à lire
@@ -128,18 +132,19 @@ export default {
             }
         },
 
-        async createGroupe(){
-            const storage = getStorage();
-            const refStorage = ref(storage, 'groupe/'+this.groupe.image);
-            await uploadString(refStorage, this.imgData, 'data_url').then((snapshot) => {
-                console.log('Uploaded a base64 string');
-                
-                // Création du participant sur le Firestore
-                const db = getFirestore();
-                const docRef = addDoc(collection(db, 'groupe'), this.groupe );
-            });
-            // redirection sur la liste des participants
-            this.$router.push('/artistes');           
+        async updateGroupe(){
+            if(this.imgModifie){
+                const storage = getStorage();
+                let docRef = ref(storage, 'groupe/'+this.imgActuelle);
+                deleteObject(docRef);
+                docRef = ref(storage, 'groupe/'+this.groupe.image);
+                await uploadString(docRef, this.imgData, 'data_url').then((snapshot) => {
+                    console.log('Uploaded a base64 string', this.groupe.image);                
+                });                   
+            }
+            const firestore = getFirestore();
+            await updateDoc(doc(firestore, "groupe", this.$route.params.id), this.groupe);
+            this.$router.push('/artistes');       
         }
     }
 }
