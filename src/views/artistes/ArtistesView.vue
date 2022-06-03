@@ -4,6 +4,16 @@
             <h1 class="mb-12">Qui vient à Rock en Stras’ ?</h1>
 
             <div class="mx-5">
+
+              <div class="my-20 mx-full flex justify-center">
+                <RouterLink to="/createArtistes">
+                  <button class="px-7 sm:px-10 py-5 bg-pink-300_90 border-4 border-pink-800 rounded-3xl text-lg text-white font-button
+                                motion-safe:transition motion-safe:duration-300 
+                                hover:bg-black hover:border-gray-300
+                                focus:bg-black focus:border-gray-300">Ajouter un groupe</button>
+                </RouterLink>
+              </div>
+
                 <div class="max-w-5xl mx-auto
                     grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(15rem,auto))] gap-10">
 
@@ -26,10 +36,6 @@
                       </RouterLink>
 
                     </div>
-
-                    <RouterLink to="/createArtistes">
-                      <monButton>Ajouter un groupe</monButton>
-                    </RouterLink>
 
                 </div>
             </div>
