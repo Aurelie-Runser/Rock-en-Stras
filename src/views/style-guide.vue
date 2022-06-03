@@ -15,8 +15,8 @@
                         flex flex-none justify-center items-center text-center font-base text-gray-100">gray-700</li>
                     <li class="w-24 h-24 border-black border rounded-xl bg-gray-300
                         flex flex-none justify-center items-center text-center font-base text-gray-900">gray-300</li>
-                    <li class="w-24 h-24 border-black border rounded-xl bg-gray-100
-                        flex flex-none justify-center items-center text-center font-base text-gray-900">gray-100</li>
+                    <li class="w-24 h-24 border-black border rounded-xl bg-gray-200
+                        flex flex-none justify-center items-center text-center font-base text-gray-900">gray-200</li>
                     <li class="w-24 h-24 border-black border rounded-xl bg-pink-800
                         flex flex-none justify-center items-center text-center font-base text-gray-100">pink-800</li>                    
                     <li class="w-24 h-24 border-black border rounded-xl bg-pink-500
@@ -30,7 +30,7 @@
 
             <div class="my-20 flex flex-row flex-wrap justify-evenly gap-x-20 gap-y-20">
                 <section>
-                    <h2 class="mb-10 px-5 py-3 bg-base inline-block">Les Typos</h2>
+                    <h2 class="mb-10 px-5 py-3 bg-base inline-block light:text-light">Les Typos</h2>
 
                     <ul class="text-gray-100 text-xl leading-loose">
                         <li class="font-h1">h1 = Parisienne</li>
@@ -60,7 +60,7 @@
                 <h2 class="mb-10 px-5 py-3 bg-base inline-block">Les Icons</h2>
 
                 <div class="p-5 flex flex-wrap items-center justify-around gap-10 bg-gray-300">
-                    <div class="flex gap-5">
+                    <div class="flex gap-5 flex-wrap">
                         <logoGrand class="w-60"/>
                         <logoPetit class="w-20"/>
                     </div>
@@ -69,11 +69,12 @@
                         <menuOuvert class="w-[60px] h-[60px]"/>
                     </div>
                     <div class="flex gap-5">
-                        <facebookIcon class="w-12 h-12"/>
+                        <downloadButton class="w-12 h-12"/>
                         <instaIcon class="w-14 h-14"/>
                         <twitterIcon class="w-12 h-12"/>
                         <youtubeIcon class="w-12 h-12"/>
                     </div>
+                    
                     <separateurRose class="w-96"/>
                 </div>
             </section>

@@ -32,6 +32,11 @@ module.exports = {
         "h3": "Germania One",
         "button": "Pacifico"
       },
+
+      screens: {
+        'light': { 'raw': '(prefers-color-scheme: light)' },
+
+      },
     },
 
   },

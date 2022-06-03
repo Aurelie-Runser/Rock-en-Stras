@@ -52,7 +52,7 @@
 
 <script>
 import backButton from "../components/backButton.vue"
-import visibleButton from "../components//icons/visibleButton.vue"
+import visibleButton from "../components/icons/visibleButton.vue"
 
 import{
     getAuth,

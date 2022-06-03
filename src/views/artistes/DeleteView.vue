@@ -88,7 +88,7 @@ export default {
 
     methods :{
 
-         async getGroupe(id){
+        async getGroupe(id){
             const firestore = getFirestore();
             const docRef = doc(firestore, "groupe", id);
             this.refGroupe = await getDoc(docRef);

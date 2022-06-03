@@ -1,12 +1,12 @@
 <template>
-    <div class="bg-base px-5 py-36 ">
-        <h1 class="mb-12">Concerts du Vendredi 15 Avril</h1>
+    <div class="bg-base light:bg-base-light px-5 py-36 ">
+        <h1 class="mb-12 light:text-light">Concerts du Vendredi 15 Avril</h1>
 
         <!--Scène 1-->
         <div class="max-w-7xl mx-auto my-20 mb-40">
             <div class="flex flex-wrap justify-between items-center w-full gap-x-5 lg:gap-x-10">
                 <div>
-                    <h2>Scène 1</h2>
+                    <h2 class="light:text-light">Scène 1</h2>
 
                     <div class="my-5 flex flex-wrap gap-5 items-center"
                          v-for="h in listeHorraire" :key="h.id">
@@ -15,14 +15,13 @@
 
                         <!--listes avec maj et sup-->
                         <div class="flex flex-wrap gap-5 items-center">
-                            <input class="h-11 w-auto m-0 px-5 py-0 bg-transparent border-transparent 
+                            <input class="h-11 w-auto m-0 px-5 py-0 bg-transparent border-gray-200 light:border-gray-500 
                                             text-base sm:text-lg font-base font-semibold text-pink-500
-                                            motion-safe:transition motion-safe:duration-300
-                                            hover:border-white
+                                            motion-safe:transition motion-safe:duration-300  
                                             focus:bg-gray-700 focus:text-gray-100" 
                                     type='time' v-model='h.heure' />
 
-                            <input class="h-11 w-auto m-0 px-5 py-0 bg-transparent border-transparent 
+                            <input class="h-11 w-auto m-0 px-5 py-0 bg-transparent border-gray-200 light:border-gray-500  
                                             text-base sm:text-lg font-base font-semibold text-pink-500
                                             motion-safe:transition motion-safe:duration-300
                                             hover:border-white
@@ -39,18 +38,18 @@
 
                     <!--creation des listes-->
                     <div class="my-7">
-                        <p class="text-lg">Ajouter un Concert</p>
+                        <p class="text-lg light:text-light">Ajouter un Concert</p>
 
                         <div class="my-5 flex flex-wrap gap-5 items-center">
 
                             <div>
-                            <p>Heure </p>
+                            <p class="light:text-light">Heure</p>
                             <input class="w-max hover:border-pink-500 focus:bg-pink-300_90"
                                     type="time" v-model="heure" required/>
                             </div>
                             
                             <div>
-                            <p>Groupe </p>
+                            <p class="light:text-light">Groupe</p>
                             <input class="w-64 hover:border-pink-500 focus:bg-pink-300_90"
                                     type="text" v-model="groupe" required/>
                             </div>
@@ -78,11 +77,11 @@
         <div class="flex flex-col max-w-6xl mx-auto my-20">
             <div class="flex flex-row-reverse flex-wrap justify-between items-center w-full sm:w-[80%] lg:w-full gap-x-5 lg:gap-x-10">
                 <div class="basis-12 flex-grow">
-                    <h2>Scène 2</h2>
+                    <h2  class="light:text-light">Scène 2</h2>
 
                     <ul class="font-semibold text-base sm:text-lg lg:text-xl leading-10 sm:leading-[4rem] lg:leading-[5rem] text-gray-100 nth-child-2n:text-pink">
-                        <li>14h - 16h : Elmer Food Beat</li>
-                        <li>16h30h - 18h30 : Flagrants Délires</li>
+                        <li  class="light:text-light">14h - 16h : Elmer Food Beat</li>
+                        <li  class="light:text-light">16h30h - 18h30 : Flagrants Délires</li>
                     </ul>
                 </div>
 
