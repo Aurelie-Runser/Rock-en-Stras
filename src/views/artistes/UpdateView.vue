@@ -95,8 +95,7 @@ export default {
             this.refGroupe = await getDoc(docRef);
             if(this.refGroupe.exists()){
                 this.groupe = this.refGroupe.data();
-                this.imgtActuelle = this.groupe.image;
-                            console.log("image", this.imgActuelle)
+                this.imgActuelle = this.groupe.image;
 
             }
             else{
