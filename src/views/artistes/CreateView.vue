@@ -3,33 +3,34 @@
         <div class="m-auto max-w-7xl">
             <h1 class="mb-12">Ajout d'un groupe</h1>
 
-            <form class="mx-5"
+            <form class="mx-auto max-w-4xl flex flex-wrap justify-center gap-x-20"
                   enctype="multipart/form-data" 
                   @submit.prevent="createGroupe">
 
-                <div>
-                    <img class="preview img-fluid" :src="imgData"/>
+                    <div class="grid grids-cols-1 place-items-center w-96 aspect-square border-gray-100 border-2 overflow-hidden">
+                        <img class="max-h-full max-w-full" :src="imgData" alt="photo que vous avez rentré"/>
+                    </div>
 
-                    <input class="" placeholder="Nom du Groupe"
-                            v-model="groupe.nom"
-                            required /> 
+                    <div class="flex flex-col gap-20">
+                        <div>
+                            <input class="block my-12 w-full h-max" placeholder="Nom du Groupe"
+                                v-model="groupe.nom"
+                                required /> 
 
-                    <div>
-                        <input type="file" class="" ref="file" id="file"
-                               @change="previewImage" >
+                            <input type="file" class="block my-12 w-full h-max" ref="file" id="file"
+                                @change="previewImage" >
+                        </div>
 
-                            <label class="" for="file">Sélectionner l'image</label>
+                        <div class="flex gap-x-10">   
+                            <backButton type="submit">
+                                Créer
+                            </backButton>
+                            <backButton class="">
+                                <RouterLink to="/artistes">Abandonner</RouterLink>
+                            </backButton>
+                        </div>
                     </div>       
-                </div>
 
-                <div>   
-                    <backButton type="submit">
-                        Créer
-                    </backButton>
-                    <backButton class="">
-                        <RouterLink to="/artistes">Abandonner</RouterLink>
-                    </backButton>
-                </div>
             </form>
         
         </div>
@@ -81,11 +82,11 @@ export default {
 
     mounted(){
         this.getGroupe()
-    },
+    }, 
 
     methods :{
 
-        async getGroupe() {
+    async getGroupe() {
       const firestore = getFirestore();
       const dbGroupe = collection(firestore, "groupe");
       const query = await onSnapshot(dbGroupe, (snapshot) => {
@@ -109,7 +110,7 @@ export default {
         });
         console.log("listeGroupe", this.listeGroupe);
       });
-    },
+        },
 
         previewImage: function(event) {
             this.file = this.$refs.file.files[0];

@@ -1,32 +1,36 @@
 <template>
     <div class="bg-pink px-5 py-36 ">
-        <div class="m-auto max-w-7xl">
+        <div class="m-auto max-w-4xl">
             <h1 class="mb-12">Suppression d'un groupe</h1>
 
-            <form class="mx-5"
+            <form class="mx-auto flex flex-col items-center lg:flex-row gap-x-20"
                   enctype="multipart/form-data" 
-                  @submit.prevent="deleteGroupe">
+                  @submit.prevent="createGroupe">
 
-                <div>
-                    <img class="preview img-fluid" :src="imgActuelle"/>
+                    <div class="flex-none grid grids-cols-1 place-items-center aspect-square w-80 sm:w-96 border-gray-100 border-2 overflow-hidden">
+                        <img class="max-h-full max-w-full" :src="imgActuelle" alt="photo que vous avez rentré"/>
+                    </div>
 
-                    <input class="" placeholder="Nom du Groupe"
-                            v-model="groupe.nom"
-                            disabled />       
-                </div>
+                    <div class="flex flex-col gap-10 max-w-sm lg:max-w-none">
+                  
+                        <input placeholder="Nom du Groupe"
+                                v-model="groupe.nom"
+                                disabled />  
 
-                <div>
-                    <p>Attention, vous ellez supprimer ce groupe. Cette action est irréversible !!!</p>
-                </div>
+                        <div class="flex-shrink bg-pink-800 p-5 rounded-lg" role="alert">
+                            <p>Attention, vous allez supprimer ce groupe. Cette action est irréversible !!!</p>
+                        </div>
 
-                <div>   
-                    <backButton type="submit">
-                        Supprimer
-                    </backButton>
-                    <backButton class="">
-                        <RouterLink to="/artistes">Abandonner</RouterLink>
-                    </backButton>
-                </div>
+                        <div class="w-max mx-auto flex gap-x-10">   
+                            <backButton type="submit">
+                                Créer
+                            </backButton>
+                            <backButton class="">
+                                <RouterLink to="/artistes">Abandonner</RouterLink>
+                            </backButton>
+                        </div>
+                    </div>       
+
             </form>
         
         </div>
