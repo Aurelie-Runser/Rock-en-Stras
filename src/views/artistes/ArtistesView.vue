@@ -21,6 +21,10 @@
                         <updateButton/>
                       </RouterLink>
 
+                      <RouterLink :to="{ name:'DeleteArtistes', params: { id: g.id }}">
+                        <deleteButton/>
+                      </RouterLink>
+
                     </div>
 
                     <RouterLink to="/createArtistes">
@@ -41,7 +45,7 @@ import monButton from "../../components/monButton.vue"
 
 import downloadButton from "../../components/icons/downloadButton.vue"
 import updateButton from "../../components/icons/updateButtonWhite.vue"
-import deleteButton from "../../components/icons/deleteButton.vue"
+import deleteButton from "../../components/icons/deleteButtonWhite.vue"
 
 import { 
     getFirestore,   // Obtenir le Firestore

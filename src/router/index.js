@@ -12,6 +12,7 @@ import GroupeView from '../views/GroupeView.vue'
 import ArtistesView from '../views/artistes/ArtistesView.vue'
 import CreateArtistes from '../views/artistes/CreateView.vue'
 import UpdateArtistes from '../views/artistes/UpdateView.vue'
+import DeleteArtistes from '../views/artistes/DeleteView.vue'
 
 import styleGuide from '../views/style-guide.vue'
 import Page404 from '../views/404.vue'
@@ -30,6 +31,7 @@ const router = createRouter({
     { path: '/artistes',           name: 'Artistes',        component: ArtistesView },
     { path: '/createArtistes',     name: 'CreateArtistes',  component: CreateArtistes  },
     { path: '/updateArtistes/:id', name: 'UpdateArtistes',  component: UpdateArtistes },
+    { path: '/deleteArtistes/:id', name: 'DeleteArtistes',  component: DeleteArtistes },
 
     { path: '/style-guide',        name: 'style-guide',     component: styleGuide },
     { path: '/:pathMatch(.*)*',    name: 'Page404',         component: Page404 },
