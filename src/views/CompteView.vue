@@ -18,18 +18,17 @@
                         required/>
                 </div>
 
-                <div class="basis-72 flex-grow">
+                <div class="flex justify-end gap-5">
                     <label for="name" class="sr-only">Mot de passe</label>
-                    <input 
+                    <input
                         :type="type" 
                         v-model="user.password" 
                         id="name" 
                         name="user_name"
                         placeholder="Mot de passe"
                         required/>
-                    <backButton @click.prevent="affiche()">
-                        affiche
-                    </backButton>
+                    <visibleButton @click.prevent="affiche()"
+                                    class=""/>
                 </div>
 
                 <div class="flex-none mx-auto p-5 w-full bg-pink-300 text-center text-gray-900" role="alert">
@@ -53,6 +52,7 @@
 
 <script>
 import backButton from "../components/backButton.vue"
+import visibleButton from "../components//icons/visibleButton.vue"
 
 import{
     getAuth,
@@ -62,7 +62,7 @@ import{
 
 export default {
   name: "ArtistesView",
-  components: { backButton },
+  components: { backButton, visibleButton },
 
   data() {
     return {
