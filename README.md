@@ -1,7 +1,19 @@
-# Projet basique Vue/router/Vite/Tailwind
+# SAE* 203 : Produire un site web en 5 jours
 
-* [Installation de Vue avec Vite comme "build tool"](https://vuejs.org/guide/quick-start.html#with-build-tools)
-* [Vue router](https://router.vuejs.org/guide/)
-* [Tailwind](https://tailwindcss.com/docs/guides/vite)
-    * avec [plugin pour Prettier](https://github.com/tailwindlabs/prettier-plugin-tailwindcss#readme) pour trier les classes TW automatiquement.
-* [HeroIcons pour Vue 3](https://github.com/tailwindlabs/heroicons#vue)
+Nous avions pour but de développer un site web en 5 jours.
+
+Pour cela, nous avions dû utiliser le framework VueJs et Tailwind pour les classes CSS, ainsi que Firebase pour la base de données.
+Comme contenus, nous devions nous baser sur un travail antérieur pour la maquette et comporter les éléments suivants grâce à des fonctions js :
+   - au moins 1 élément simple (juste une donnée) ajoutable, modifiable et supprimable de la base de données via notre site (sur la page *concert*)
+   - au moins 1 élément complexe (à la moins une donnée et une image) ajoutable, modifiable et supprimable de la base de données via notre site (sur la page *artistes*)
+   - transfère d'un élément sélectionné sur une page vers une autre (exemple : je clique sur l'artiste 1 et je vais sur la page de l'artiste grâce à la base de données)
+   - les éléments de la base de données sont classés (par ordre alphabétique)
+   - une barre de recherche
+   - un moyen de se connecter (mais pas de s'inscrire)
+
+En plus, un mode jour-nuit est disponible partiellement disponible, le site est entièrement responsif et possède une page 404.
+
+Voici le lien pour aller sur le site : https://festival.aurelierunser.fr/
+
+-----------
+****SAE (Situation d'Apprentissage et d'Évaluation) : mise en situation où l'étudiant réalise un ensemble de tâches en vue d'atteindre un but fixé et de vérifier ses compétenses.***
